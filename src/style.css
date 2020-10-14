@@ -202,7 +202,7 @@ body {
     text-align: center; }
   .navigation__item {
     margin: 1rem;
-    transform: translateX(-15%); }
+    transform: translate(-15%, -15%); }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 3rem;
