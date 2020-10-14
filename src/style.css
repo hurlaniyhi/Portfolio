@@ -202,11 +202,11 @@ body {
     text-align: center; }
   .navigation__item {
     margin: 1rem;
-    transform: translate(-15%, -15%); }
+    transform: translateX(-15%); }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 3.5rem;
+    font-weight: 500;
     padding: 1rem 2rem;
     color: white;
     text-decoration: none;

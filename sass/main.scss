@@ -339,7 +339,7 @@ body {
 
   &__item {
       margin: 1rem;
-      transform: translate(-15%, -15%);
+      transform: translateX(-15%);
   }
 
   &__link {
@@ -348,8 +348,8 @@ body {
       &:visited {
           
           display: inline-block;
-          font-size: 3rem;
-          font-weight: 300;
+          font-size: 3.5rem;
+          font-weight: 500;
           padding: 1rem 2rem;
           color: white;
           text-decoration: none;
