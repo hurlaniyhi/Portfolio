@@ -5,6 +5,11 @@
   box-sizing: inherit;
 }
 
+::selection {  // i.e what happens when highlight things like text
+  background-color: #34495E;
+  color: white;
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
@@ -189,6 +194,7 @@ body {
       font-size: 1.5rem;
       width: 8rem;
       text-align: center;
+      outline: none;
       text-decoration: none;
       color: white;
       transition: all 0.3s;
@@ -227,7 +233,7 @@ body {
       background-color: #34495e;
       height: 4rem;
       width: 5rem;
-      position: fixed;
+      position: absolute;
       top: .5rem;
       right: 2rem;
       border-radius: 5%;
@@ -245,6 +251,8 @@ body {
       .navigation__move-1 {
         position: absolute;
         color: white;
+        outline: none;
+        text-decoration: none;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scaleX(1.2);
@@ -258,6 +266,8 @@ body {
       .navigation__move-2 {
         display: none;
         color: white;
+        outline: none;
+        text-decoration: none;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -284,7 +294,7 @@ body {
       height: 3rem;
       width: 4rem;
       border-radius: 5%;
-      position: fixed;
+      position: absolute;
       top: .55rem;
       right: 2.5rem;
       background-image: radial-gradient( #34495E,  #142954);
@@ -318,6 +328,8 @@ body {
 
   &__list {
       position: absolute;
+      //background-color: hotpink;
+      display: block;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -327,6 +339,7 @@ body {
 
   &__item {
       margin: 1rem;
+      transform: translateX(-15%);
   }
 
   &__link {
@@ -363,6 +376,7 @@ body {
   // FUNCTIONALITY 
   &__checkbox:target ~ &__background {
       transform: scale(80);
+      position: fixed;
 
   } 
 
@@ -372,6 +386,8 @@ body {
   } 
 
   &__checkbox:target ~ &__button {
+    position: fixed;
+
    .navigation__move-1 {
      display: none;
    }
@@ -381,37 +397,7 @@ body {
   }
 } 
 
-   // ICON
-   &__icon {
-  //      position: relative;
-  //      margin-top: 3.5rem;
-  //      &,
-  //      &::before,
-  //      &::after {
-  //          width: 3rem;
-  //          height: 2px;
-  //          background-color: #333;
-  //          display: inline-block;
-  //      }
-
-  //      &::before,
-  //      &::after {
-  //          content: "";
-  //          position: absolute;
-  //          left: 0;
-  //          transition: all .2s;
-  //      }
-
-  //      &::before {
-  //          top: -.8rem;
-  //          //transform-origin: right; // it depects which side we want the transformation to
-  //      }
-
-  //      &::after {
-  //          top: .8rem;
-  //      }
-   }
-
+  
    &__button:hover &__icon::before {
        top: -1rem;
    }
@@ -481,9 +467,38 @@ body {
 
   &--image {
     vertical-align: middle;
-    width: 12rem;
-    height: 12rem;
+    width: 20rem;
+    height: 18rem;
     border-radius: 50%;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      // display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+
+    &:hover,
+    &:active {
+      transform: translateY(-.5rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        background-color: white;
+        opacity: 0;
+      }
+    }
   }
 
   &--message {
@@ -586,7 +601,7 @@ body {
     &--more_projects {
       margin-top: 4rem;
       padding: 1rem 1rem;
-      background-color: #142954;
+      background-color:  #34495E;
       display: inline-block;
       color: white;
       cursor: pointer;
@@ -781,6 +796,7 @@ body {
         //display: inline-block;
         color: white;
         text-decoration: none;
+        outline: none;
         font-size: 1.5rem;
         border-radius: 10rem;
         // text-transform: uppercase;
@@ -937,6 +953,7 @@ body {
 }
 
 .image-text {
+  display: inline-block;
   font-size: 2.6rem;
   font-weight: 600;
   color: white;
@@ -987,6 +1004,32 @@ body {
   &:hover &:not(:hover) {
     transform: scale(0.3);
     background-color: red;
+  }
+}
+
+
+.contact-me {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  position: relative;
+  border: 1px dashed black;
+
+  background-image: linear-gradient(130deg,
+  rgba(yellow, 1) 0%, 
+  yellow 70%, 
+  rgba(yellow, .5) 70%,
+  rgba(yellow, .5) 80%,
+  
+  transparent 80%); 
+
+  .childish {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
   }
 }
 

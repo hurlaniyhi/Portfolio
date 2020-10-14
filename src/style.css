@@ -4,6 +4,10 @@
   padding: 0;
   box-sizing: inherit; }
 
+::selection {
+  background-color: #34495E;
+  color: white; }
+
 html {
   font-size: 62.5%; }
   @media (max-width: 56.25em) {
@@ -119,6 +123,7 @@ body {
       font-size: 1.5rem;
       width: 8rem;
       text-align: center;
+      outline: none;
       text-decoration: none;
       color: white;
       transition: all 0.3s;
@@ -141,7 +146,7 @@ body {
     background-color: #34495e;
     height: 4rem;
     width: 5rem;
-    position: fixed;
+    position: absolute;
     top: .5rem;
     right: 2rem;
     border-radius: 5%;
@@ -155,12 +160,16 @@ body {
     .navigation__button .navigation__move-1 {
       position: absolute;
       color: white;
+      outline: none;
+      text-decoration: none;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%) scaleX(1.2); }
     .navigation__button .navigation__move-2 {
       display: none;
       color: white;
+      outline: none;
+      text-decoration: none;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -169,7 +178,7 @@ body {
     height: 3rem;
     width: 4rem;
     border-radius: 5%;
-    position: fixed;
+    position: absolute;
     top: .55rem;
     right: 2.5rem;
     background-image: radial-gradient(#34495E, #142954);
@@ -185,13 +194,15 @@ body {
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .navigation__list {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center; }
   .navigation__item {
-    margin: 1rem; }
+    margin: 1rem;
+    transform: translateX(-15%); }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 3rem;
@@ -211,14 +222,17 @@ body {
     color: #34495e;
     transform: translateX(1rem); }
   .navigation__checkbox:target ~ .navigation__background {
-    transform: scale(80); }
+    transform: scale(80);
+    position: fixed; }
   .navigation__checkbox:target ~ .navigation__nav {
     width: 100%;
     opacity: 1; }
-  .navigation__checkbox:target ~ .navigation__button .navigation__move-1 {
-    display: none; }
-  .navigation__checkbox:target ~ .navigation__button .navigation__move-2 {
-    display: block; }
+  .navigation__checkbox:target ~ .navigation__button {
+    position: fixed; }
+    .navigation__checkbox:target ~ .navigation__button .navigation__move-1 {
+      display: none; }
+    .navigation__checkbox:target ~ .navigation__button .navigation__move-2 {
+      display: block; }
   .navigation__button:hover .navigation__icon::before {
     top: -1rem; }
   .navigation__button:hover .navigation__icon::after {
@@ -262,9 +276,29 @@ body {
     animation: writeLetters 4s steps(200) 1s 1 normal both; }
   .header_container--image {
     vertical-align: middle;
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%; }
+    width: 20rem;
+    height: 18rem;
+    border-radius: 50%;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+    transition: all .3s;
+    position: relative; }
+    .header_container--image::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s; }
+    .header_container--image:hover, .header_container--image:active {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .header_container--image:hover::after, .header_container--image:active::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        background-color: white;
+        opacity: 0; }
   .header_container--message {
     margin-top: 2.5rem;
     animation: moveInBottom 1s ease-out 0.75s;
@@ -331,7 +365,7 @@ body {
     .content__info--more_projects {
       margin-top: 4rem;
       padding: 1rem 1rem;
-      background-color: #142954;
+      background-color: #34495E;
       display: inline-block;
       color: white;
       cursor: pointer;
@@ -461,6 +495,7 @@ body {
         background-color: #34495e;
         color: white;
         text-decoration: none;
+        outline: none;
         font-size: 1.5rem;
         border-radius: 10rem;
         margin-top: 3rem;
@@ -577,6 +612,7 @@ body {
   margin-right: .8rem; }
 
 .image-text {
+  display: inline-block;
   font-size: 2.6rem;
   font-weight: 600;
   color: white;
@@ -612,3 +648,17 @@ body {
   .image-items:hover .image-items:not(:hover) {
     transform: scale(0.3);
     background-color: red; }
+
+.contact-me {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  position: relative;
+  border: 1px dashed black;
+  background-image: linear-gradient(130deg, yellow 0%, yellow 70%, rgba(255, 255, 0, 0.5) 70%, rgba(255, 255, 0, 0.5) 80%, transparent 80%); }
+  .contact-me .childish {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; }

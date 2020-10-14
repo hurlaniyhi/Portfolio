@@ -12,8 +12,8 @@ const Apk = () => {
     const history = useHistory()
     
     
-   // "start": "react-scripts start"
-   
+   // "start": "react-scripts start",
+   // "start": "serve -s build",
     // function handleNav(){
     //     history.push("/")
     // }

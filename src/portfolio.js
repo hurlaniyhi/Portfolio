@@ -530,6 +530,10 @@ const Portfolio = () => {
 
                 </div>
             </section>
+
+            {/* <section>
+                <p className="contact-me"><span className="childish">My name</span></p>
+            </section> */}
         </div>
     )
 }
