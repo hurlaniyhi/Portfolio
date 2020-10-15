@@ -160,13 +160,53 @@ const Portfolio = () => {
     ]
     var used = projectArray[info.project]
 
-    const image = [require("./assets/shopwyse/shopwyse1.jpg"), require("./assets/shopwyse/shopwyse2.jpg"), require("./assets/shopwyse/shopwyse3.jpg"),
+    const image1 = [require("./assets/shopwyse/shopwyse1.jpg"), require("./assets/shopwyse/shopwyse2.jpg"), require("./assets/shopwyse/shopwyse3.jpg"),
     require("./assets/shopwyse/shopwyse4.jpg"), require("./assets/shopwyse/shopwyse5.jpg"), require("./assets/shopwyse/shopwyse6.jpg"),
     require("./assets/shopwyse/shopwyse7.jpg"), require("./assets/shopwyse/shopwyse8.jpg"), require("./assets/shopwyse/shopwyse9.jpg"),
     require("./assets/shopwyse/shopwyse10.jpg"), require("./assets/shopwyse/shopwyse11.jpg"), require("./assets/shopwyse/shopwyse12.jpg"),
     require("./assets/shopwyse/shopwyse13.jpg"), require("./assets/shopwyse/shopwyse14.jpg"), require("./assets/shopwyse/shopwyse15.jpg"),
     require("./assets/shopwyse/shopwyse16.jpg"), require("./assets/shopwyse/shopwyse17.jpg"), require("./assets/shopwyse/shopwyse18.jpg"),]
     
+    const image2 = [require("./assets/auto/auto1.jpg"), require("./assets/auto/auto2.jpg"), require("./assets/auto/auto3.jpg"),
+    require("./assets/auto/auto4.jpg"), require("./assets/auto/auto5.jpg"), require("./assets/auto/auto6.jpg")]
+    
+    const image3 = [require("./assets/gtaccount/account1.jpg"), require("./assets/gtaccount/account2.jpg"), require("./assets/gtaccount/account3.jpg"),
+    require("./assets/gtaccount/account4.jpg"), require("./assets/gtaccount/account5.jpg"), require("./assets/gtaccount/account6.jpg"),
+    require("./assets/gtaccount/account7.jpg"), require("./assets/gtaccount/account8.jpg"), require("./assets/gtaccount/account9.jpg"),]
+    
+    const image4 = [require("./assets/thinklex/Thinklex1.jpg"), require("./assets/thinklex/Thinklex2.jpg"), require("./assets/thinklex/Thinklex3.jpg"),
+    require("./assets/thinklex/Thinklex4.jpg"), require("./assets/thinklex/Thinklex5.jpg"), require("./assets/thinklex/Thinklex6.jpg"),
+    require("./assets/thinklex/Thinklex7.jpg")]
+
+    const image5 = [require("./assets/natours/natours1.jpg"), require("./assets/natours/natours2.jpg"), require("./assets/natours/natours3.jpg"),
+    require("./assets/natours/natours4.jpg"), require("./assets/natours/natours5.jpg"), require("./assets/natours/natours6.jpg"),
+    require("./assets/natours/natours7.jpg"), require("./assets/natours/natours8.jpg")]
+    
+    const image6 = [require("./assets/dashboard/Dashboard1.jpg"), require("./assets/dashboard/Dashboard2.jpg"),
+    require("./assets/dashboard/Dashboard3.jpg"), require("./assets/dashboard/Dashboard4.jpg")]
+
+    const image7 = [require("./assets/encryption/encryption.jpg")]
+
+    const image8 = [require("./assets/path-tracker/tracker1.jpg"), require("./assets/path-tracker/tracker2.jpg"),
+    require("./assets/path-tracker/tracker3.jpg"), require("./assets/path-tracker/tracker4.jpg"),
+    require("./assets/path-tracker/tracker5.jpg"), require("./assets/path-tracker/tracker6.jpg")]
+
+    const image9 = [require("./assets/request/request1.jpg"), require("./assets/request/request2.jpg"), require("./assets/request/request3.jpg"),
+    require("./assets/request/request4.jpg"), require("./assets/request/request5.jpg"), require("./assets/request/request6.jpg"),
+    require("./assets/request/request7.jpg"), require("./assets/request/request8.jpg")]
+
+
+    const shopwyse = "green"
+    const autoresponse = "#D94F00"
+    const account = "#E04406"
+    const thinklex = "#F3DC40"
+    const natour = "green"
+    const dashboard = "black"
+    const engine = "#000"
+    const tracker = "#9263CD"
+    const request = "#F3DC40"
+
+
     return (
         <div className="container">
             <div className="header">
@@ -336,7 +376,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <div><a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image)}>Project Screnshoots</a></div>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image1,shopwyse)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -376,7 +416,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image2,autoresponse)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -411,7 +451,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image3,account)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -449,7 +489,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image4,thinklex)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -484,7 +524,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image5,natour)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -523,7 +563,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image6,dashboard)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -562,7 +602,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image7,engine)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -598,7 +638,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image8,tracker)}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -634,7 +674,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image9,request)}>Project Screnshoots</a>
                       </div>
                     </div>
 

@@ -18,20 +18,23 @@ const Apk = () => {
     //     history.push("/")
     // }
     return(
+        <div>
+        {state.src ? 
         <div className="image-body">
             
-            {state.src ? 
             <div className="image-container">
-                <div className="screenshots-heading">
-                    <a className="home-button" onClick={()=>Home(history)}><FaHome className="home-logo" size={23}/><p className="span-text">Home</p></a>
+                <div className="screenshots-heading" style={{backgroundColor: state.color}}>
+                    <a className="home-button" onClick={()=>Home(history)} style={{color: state.color}}><FaHome className="home-logo" size={23}/><p className="span-text">Home</p></a>
                     <h2 className="image-text">Project Screenshots</h2>
                 </div>
                 <div className="project-images">
                 {state.src}
                 </div>
             </div>
-                : null}
+                
             
+        </div>
+        : <p style={{fontSize: "3.5rem", textAlign: "center", textTransform: "uppercase", marginTop: "25rem", fontWeight: "500"}}>No Screechots to display as no Project is Selected</p>}
         </div>
     )
 }
