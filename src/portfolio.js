@@ -206,6 +206,8 @@ const Portfolio = () => {
     const tracker = "#9263CD"
     const request = "#F3DC40"
 
+    document.body.style.backgroundColor = "white";
+
 
     return (
         <div className="container">

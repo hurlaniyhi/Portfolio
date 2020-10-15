@@ -17,6 +17,9 @@ const Apk = () => {
     // function handleNav(){
     //     history.push("/")
     // }
+
+    document.body.style.backgroundColor = "#34495e";
+
     return(
         <div>
         {state.src ? 
