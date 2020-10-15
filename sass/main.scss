@@ -73,16 +73,16 @@ body {
 @keyframes moveInRight {
   0% {
     opacity: 0;
-    transform: translateX(15rem) skewX(-10deg);
+    transform: translateX(7rem);
   }
-
+ 
   80% {
-    transform: translateX(-10rem) skewX(-10deg);
+    transform: translateX(-3rem); 
   }
 
   100% {
     opacity: 1;
-    transform: translate(0) skewX(-10deg);
+    transform: translate(0);
   }
 }
 
