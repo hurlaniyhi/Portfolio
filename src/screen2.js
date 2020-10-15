@@ -37,7 +37,7 @@ const Apk = () => {
                 
             
         </div>
-        : <p style={{fontSize: "3.5rem", textAlign: "center", textTransform: "uppercase", marginTop: "25rem", fontWeight: "500"}}>No Screechots to display as no Project is Selected</p>}
+        : <p style={{fontSize: "3.5rem", textAlign: "center", textTransform: "uppercase", marginTop: "25rem", fontWeight: "500", color: "white"}}>No Screenshot to display as no Project is Selected</p>}
         </div>
     )
 }
