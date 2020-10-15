@@ -51,18 +51,18 @@ const Portfolio = () => {
     let projectArray = [
     <div>
         <div className="content__info--project">
-            <img src={GTAccount} alt="" className="content__info--project-image"/>
+            <img src={require("./assets/shopwyse/shopwyse1.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GT Account Opening App</a>
+                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">Shopwyse</a>
                     <p className="content__info--project-text-note">
-                        This is a web application designed for prospective GTBank's customers to open 
-                        an account in less than 3 minutes.
+                        Shopwyse is an e-commerce mobile app that makes buying and selling easy for both 
+                        sellers and buyers.  
                     </p>
             </div>
         </div>
 
         <div id="good" className="content__info--project">
-            <img src={AutoResponse} alt="" className="content__info--project-image"/>
+            <img src={require("./assets/auto/auto3.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
                 <a href="https://gtautoresponse.herokuapp.com" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
                     <p className="content__info--project-text-note">
@@ -73,12 +73,13 @@ const Portfolio = () => {
         </div>
 
         <div id="good" className="content__info--project">
-            <img src={AutoResponse} alt="" className="content__info--project-image"/>
+            <img src={require("./assets/gtaccount/account1.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="content__info--project-text-link">Encryption Engine</a>
+                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GT Account Opening App</a>
                     
                     <p className="content__info--project-text-note">
-                        This is a web app that allows users to encrypt their data when consuming an API.
+                        This is a web application designed for prospective GTBank's customers to open 
+                        an account in less than 3 minutes.
                     </p>
             </div>
         </div>
@@ -86,34 +87,36 @@ const Portfolio = () => {
 
 <div>
 <div className="content__info--project">
-    <img src={GTAccount} alt="" className="content__info--project-image"/>
+    <img src={require("./assets/thinklex/Thinklex1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GT Account Opening App</a>
+        <a href="#" target="_blank" className="content__info--project-text-link">Thinklex</a>
             <p className="content__info--project-text-note">
-                This is a web application designed for prospective GTBank's customers to open 
-                an account in less than 3 minutes.
+                Thinklex is a mobile app built for Engineering students. The app contains a scientific calculator, 
+                four equations with four unknowns solver and Engineering formulas with how they are used.
+
+
             </p>
     </div>
 </div>
 
 <div id="good" className="content__info--project">
-    <img src={AutoResponse} alt="" className="content__info--project-image"/>
+    <img src={require("./assets/natours/natours1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://gtautoresponse.herokuapp.com" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
+        <a href="https://tourandsmile.herokuapp.com" target="_blank" className="content__info--project-text-link">Tour And Smile</a>
             <p className="content__info--project-text-note">
-                This platform allows GTBank staff to personalize and send already written mails to developers 
-                registered on GTBank developers' portal.
+                This is a website that allows people to book for a tour from different categories of tours available.
             </p>
     </div>
 </div>
 
 <div id="good" className="content__info--project">
-    <img src={AutoResponse} alt="" className="content__info--project-image"/>
+    <img src={require("./assets/dashboard/Dashboard1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="content__info--project-text-link">Encryption Engine2</a>
+        <a href="https://gtdashboard.herokuapp.com" target="_blank" className="content__info--project-text-link">Server Monitoring Dashboard</a>
             
             <p className="content__info--project-text-note">
-                This is a web app that allows users to encrypt their data when consuming an API.
+                This is an internal web app for monitoring servers with auto-notification and server uptime and 
+                downtime analysis.
             </p>
     </div>
 </div>
@@ -121,34 +124,34 @@ const Portfolio = () => {
 
 <div>
 <div className="content__info--project">
-    <img src={GTAccount} alt="" className="content__info--project-image"/>
+    <img src={require("./assets/encryption/encryption.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GT Account Opening App</a>
-            <p className="content__info--project-text-note">
-                This is a web application designed for prospective GTBank's customers to open 
-                an account in less than 3 minutes.
-            </p>
-    </div>
-</div>
-
-<div id="good" className="content__info--project">
-    <img src={AutoResponse} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://gtautoresponse.herokuapp.com" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
-            <p className="content__info--project-text-note">
-                This platform allows GTBank staff to personalize and send already written mails to developers 
-                registered on GTBank developers' portal.
-            </p>
-    </div>
-</div>
-
-<div id="good" className="content__info--project">
-    <img src={AutoResponse} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="content__info--project-text-link">Encryption Engine3</a>
-            
+        <a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="content__info--project-text-link">Encryption Engine</a>
             <p className="content__info--project-text-note">
                 This is a web app that allows users to encrypt their data when consuming an API.
+            </p>
+    </div>
+</div>
+
+<div id="good" className="content__info--project">
+    <img src={require("./assets/path-tracker/tracker2.jpg")} alt="" className="content__info--project-image"/>
+    <div className="content__info--project-text">
+        <a href="#" target="_blank" className="content__info--project-text-link">Tour Tracker</a>
+            <p className="content__info--project-text-note">
+                This is a mobile app that allows users to track and save the path they follow on map as they tour 
+                around the world.
+            </p>
+    </div>
+</div>
+
+<div id="good" className="content__info--project">
+    <img src={require("./assets/request/request1.jpg")} alt="" className="content__info--project-image"/>
+    <div className="content__info--project-text">
+        <a href="https://ui-ux-request.herokuapp.com" target="_blank" className="content__info--project-text-link">Request App</a>
+            
+            <p className="content__info--project-text-note">
+                It is a web app which can be used by any organization to request for any service 
+                of the organization that owns the app.
             </p>
     </div>
 </div>
@@ -295,7 +298,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a>Shopwyse</a></h2>
+                       <h2 className="heading-secondary"><a href="#" className="main-project__info-story-project-title-name">Shopwyse</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -324,7 +327,7 @@ const Portfolio = () => {
                                     <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self owned
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self Owned
                                 </p>
                                 <p className="text-secondary">
                                     <span className="list-title">Tools:</span> &nbsp; &nbsp;React Native, Node.js, Web Socket, MongoDB
@@ -339,7 +342,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a>Email Servive Platform</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtautoresponse.herokuapp.com" className="main-project__info-story-project-title-name">Email Servive Platform</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -379,7 +382,42 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a>Thinklex</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtaccount.herokuapp.com" className="main-project__info-story-project-title-name">GTB Account Opening</a></h2>
+                        <div className="main-project__info-story-block">
+                            <div className="main-project__info-story-block-1">
+                                <p className="heading-tertiary list-title">About</p>
+                                <div className="text-secondary">
+                                    <p>
+                                        This is a web application designed for prospective GTBank's customers 
+                                        to open an account in less than 3 minutes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="main-project__info-story-block-2">
+                                
+                                <p className="text-secondary">
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end developer
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;GTBank's Fintech
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React.js, Node.js, MongoDB
+                                </p>
+                               
+                            </div>
+                        </div>
+
+                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                      </div>
+                    </div>
+
+                    <div className="main-project__info-story">
+                      <div className="main-project__info-story-project-title">
+                       <h2 className="heading-secondary"><a href="#" className="main-project__info-story-project-title-name">Thinklex</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -417,17 +455,14 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a>Thinklex</a></h2>
+                       <h2 className="heading-secondary"><a href="https://tourandsmile.herokuapp.com" className="main-project__info-story-project-title-name">Tour and Smile</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
                                 <div className="text-secondary">
+                                   
                                     <p>
-                                        Thinklex is a mobile app built for Engineering students.
-                                    </p>
-                                    <p>
-                                        The app contains a scientific calculator, four equations with four unknowns 
-                                        solver S.I units, prefixes and Engineering formulas and how they are used.
+                                       This is a website that allows people to book for a tour from different categories of tours available.
                                     </p>
                                 </div>
                             </div>
@@ -440,10 +475,10 @@ const Portfolio = () => {
                                     <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self owned
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self Owned
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React Native
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;HTML, CSS, SASS
                                 </p>
                                
                             </div>
@@ -455,33 +490,34 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a>Thinklex</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtdashboard.herokuapp.com" className="main-project__info-story-project-title-name">Server Monitoring Dashboard</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
                                 <div className="text-secondary">
                                     <p>
-                                        Thinklex is a mobile app built for Engineering students.
+                                        This is an internal web app for monitoring servers with auto-notification and 
+                                        server uptime and downtime analysis.
                                     </p>
                                     <p>
-                                        The app contains a scientific calculator, four equations with four unknowns 
-                                        solver S.I units, prefixes and Engineering formulas and how they are used.
+                                        It notifies the team by sending them an email whenever a server is down. The team can also view the
+                                        table and graphical representation of the server analysis on the platform.
                                     </p>
                                 </div>
                             </div>
                             <div className="main-project__info-story-block-2">
                                 
                                 <p className="text-secondary">
-                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end developer
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Back-end developer
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp;GTBank's Fintech Memebers
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self owned
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;GTBank's Fintech
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React Native
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React.js, Node.js, Websocket, MongoDB
                                 </p>
                                
                             </div>
@@ -493,33 +529,106 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a>Thinklex</a></h2>
+                       <h2 className="heading-secondary"><a href="https://fintechdataencryption.herokuapp.com" className="main-project__info-story-project-title-name">Encryption Engine</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
                                 <div className="text-secondary">
                                     <p>
-                                        Thinklex is a mobile app built for Engineering students.
+                                        This is an internal web app for encrypting data (payload) when consuming APIs.
+                                        It returns the encrypted data as a response
                                     </p>
                                     <p>
-                                        The app contains a scientific calculator, four equations with four unknowns 
-                                        solver S.I units, prefixes and Engineering formulas and how they are used.
+                                        It can take in a string and object with the users having the advantage of being able to select the the keys
+                                        keys of the object they wish to encrypt.
                                     </p>
                                 </div>
                             </div>
                             <div className="main-project__info-story-block-2">
                                 
                                 <p className="text-secondary">
-                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end developer
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and Back-end developer
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp;GTBank's Fintech Memebers
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;GTBank's Fintech
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;Node.js, Handlebars, CSS
+                                </p>
+                               
+                            </div>
+                        </div>
+
+                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                      </div>
+                    </div>
+
+                    <div className="main-project__info-story">
+                      <div className="main-project__info-story-project-title">
+                       <h2 className="heading-secondary"><a href="#" className="main-project__info-story-project-title-name">Path Tracker</a></h2>
+                        <div className="main-project__info-story-block">
+                            <div className="main-project__info-story-block-1">
+                                <p className="heading-tertiary list-title">About</p>
+                                <div className="text-secondary">
+                                   
+                                    <p>
+                                        This is a mobile app that allows users to track and save the path they follow on 
+                                        map as they tour around the world.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="main-project__info-story-block-2">
+                                
+                                <p className="text-secondary">
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and Back-end developer
                                 </p>
                                 <p className="text-secondary">
                                     <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self owned
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self Owned
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React Native
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React Native, Node.js, MongoDB
+                                </p>
+                               
+                            </div>
+                        </div>
+
+                        <a href="#" className="main-project__info-story-screenshots">Project Screnshoots</a>
+                      </div>
+                    </div>
+
+                    <div className="main-project__info-story">
+                      <div className="main-project__info-story-project-title">
+                       <h2 className="heading-secondary"><a href="https://ui-ux-request.herokuapp.com" className="main-project__info-story-project-title-name">Request App</a></h2>
+                        <div className="main-project__info-story-block">
+                            <div className="main-project__info-story-block-1">
+                                <p className="heading-tertiary list-title">About</p>
+                                <div className="text-secondary">
+                                    <p>
+                                        It is a web app which can be used by any organization to request for any 
+                                        service of the organization that owns the app. It has the feature of tracking the status of the request made.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            <div className="main-project__info-story-block-2">
+                                
+                                <p className="text-secondary">
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and Back-end developer
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Self Owned
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;Node.js, Handlebars, CSS, MongoDB
                                 </p>
                                
                             </div>

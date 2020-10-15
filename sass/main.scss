@@ -661,6 +661,9 @@ body {
   }
 }
 
+
+// PROJECT DETAILS
+
 .main-project {
   position: relative;
 
@@ -752,6 +755,21 @@ body {
 
       &-project-title {
         transform: skewX(10deg);
+        transition: all .2s;
+
+
+        &-name {
+          &:link, &:visited {
+            text-decoration: none;
+            color: #34495e;
+          }
+
+          &:hover, &:active {
+            color: green;
+            box-shadow: 0 5rem 7rem rgba(0, 0, 0, 0.3);
+            
+          }
+        }
 
         @media (max-width: 580px) {
           transform: skewX(0deg);
@@ -1013,32 +1031,6 @@ body {
 
 
 
-// CONTACT
-
-.contact-me {
-  width: 12rem;
-  height: 12rem;
-  border-radius: 50%;
-  position: relative;
-  border: 1px dashed black;
-
-  background-image: linear-gradient(130deg,
-  rgba(yellow, 1) 0%, 
-  yellow 70%, 
-  rgba(yellow, .5) 70%,
-  rgba(yellow, .5) 80%,
-  
-  transparent 80%); 
-
-  .childish {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    
-  }
-}
 
 
 // FOOTER
