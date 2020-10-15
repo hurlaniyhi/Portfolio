@@ -713,6 +713,10 @@ body {
       &:not(:last-child) {
         margin-bottom: 6rem;
       }
+
+      &:last-child {
+        margin-bottom: 12rem;
+      }
       // padding-left: 9rem;
       // font-size: $default-font-size;
       transform: skewX(-10deg);
@@ -1008,6 +1012,9 @@ body {
 }
 
 
+
+// CONTACT
+
 .contact-me {
   width: 12rem;
   height: 12rem;
@@ -1033,6 +1040,222 @@ body {
   }
 }
 
+
+// FOOTER
+
+.footer {
+  background-color: #34495e;
+
+  &-brand {
+    text-align: center;
+    padding: 7rem 0; 
+
+    &-logo {
+      height: 10rem;
+      margin-bottom: 3rem;
+
+      @media (max-width: 503px) {
+        height: 9rem;
+      }
+    }
+
+    &-link {
+      margin-top: 4rem;
+      font-size: 2.8rem;
+      padding-bottom: .7rem;
+
+      @media (max-width: 503px) {
+        font-size: 2.5rem;
+        font-weight: 500;
+      }
+     
+
+      &:link, &:visited {
+        color: white;
+      }
+    }
+  }
+
+  &__connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0;
+    color: white;
+    font-size: 1.4rem;
+
+    @media (max-width: 503px) {
+      flex-wrap: wrap;
+      margin: 0 auto
+    }
+
+    &-one {
+      display: inline-block;
+      //width: 70rem;
+      margin: 0 4rem;
+      border-top: 1px solid white;
+
+      @media (max-width: 503px) {
+        margin-bottom: 3.8rem;
+      }
+      
+
+      &-heading {
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        font-weight: 500;
+
+        @media (max-width: 503px) {
+          text-align: center;
+        }
+      }
+
+      &-info {
+        list-style: none;
+        padding-left: 0;
+        line-height: 2.5rem;
+
+        &-link {
+          text-decoration: none;
+
+          &:link, &:visited {
+            color: white
+          }
+        }
+      }
+    }
+
+    &-two {
+      display: inline-block;
+      //width: 70rem;
+      margin: 0 4rem;
+      border-top: 1px solid white;
+
+      // @media (max-width: 490px) {
+      //   margin-left: 0;
+      // }
+
+      &-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        &-linkedin {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: 50%;
+          background-color: #0077B5;
+          position: relative;
+          
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          &:link, &:visited {
+            text-decoration: none;
+            color: white;
+          }
+
+        }
+
+        &-facebook {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: 50%;
+          background-color: #4867AA;
+          position: relative;
+          
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          &:link, &:visited {
+            text-decoration: none;
+            color: white;
+          }
+
+        }
+
+        &-twitter {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: 50%;
+          background-color: #19B1E2;
+          position: relative;
+          
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          &:link, &:visited {
+            text-decoration: none;
+            color: white;
+          }
+
+        }
+
+        &-github {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: 50%;
+          background-color: #1B1E22;
+          position: relative;
+          
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          &:link, &:visited {
+            text-decoration: none;
+            color: white;
+          }
+
+        }
+
+        &-instagram {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: 50%;
+          background-image: linear-gradient(to left bottom, #515BD4, #8134AF, #DD2A7B, #F58529);
+          //background-color: #0077B5;
+          position: relative;
+          
+          &:not(:last-child) {
+            margin-right: 1.5rem;
+          }
+
+          &:link, &:visited {
+            text-decoration: none;
+            color: white;
+          }
+
+        }
+
+        &-icon {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  &__copywrite {
+    padding: .1rem 0 .1rem 6rem;
+    background-color: #2E3F4E;
+
+    @media (max-width: 430px) {
+      padding: .1rem 0 .1rem 2rem;
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: white;
+    }
+  }
+}
 
 
 

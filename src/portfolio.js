@@ -1,7 +1,8 @@
 import React, {useState, useContext} from 'react';
 import {useHistory} from 'react-router-dom'
 import './style.css'
-import {FaDownload, FaArrowLeft, FaArrowRight, FaBars, FaHome} from 'react-icons/fa'
+import {FaDownload, FaArrowLeft, FaArrowRight, FaBars, FaHome, FaLinkedinIn,
+    FaInstagram, FaFacebookF, FaTwitter, FaGithub} from 'react-icons/fa'
 import StateContext from "./context/StateContext"
 var profile = require("./dp.jpg")
 var GTAccount = require("./assets/shopwyse/shopwyse1.jpg")
@@ -534,6 +535,52 @@ const Portfolio = () => {
             {/* <section>
                 <p className="contact-me"><span className="childish">My name</span></p>
             </section> */}
+
+            <section className="footer">
+                <div className="footer-brand">
+                    <img src={require("./assets/rhydhur-logo.png")} className="footer-brand-logo" />
+                    {/* <a href="#" className="footer-brand-link"><p className="footer-brand-link-text">rhydhur-tech.herokuapp.com</p></a> */}
+                </div>
+                <div className="footer__connect">
+                    <div className="footer__connect-one">
+                        <p className="footer__connect-one-heading">Contacts</p>
+                        <ul className="footer__connect-one-info">
+                            <li><a href="#" className="footer__connect-one-info-link">Email: olaniyi.jibola152@gmail.com</a></li>
+                            <li><a href="#" className="footer__connect-one-info-link">Mobile: 07087994127</a></li>
+                            <li><a href="#" className="footer__connect-one-info-link">Phone No: 08156170991</a></li>
+                        </ul>
+                    </div>
+
+                    <div className="footer__connect-two">
+                        <p className="footer__connect-one-heading">Social</p>
+                        <div className="footer__connect-two-info">
+                            <a href="#" className="footer__connect-two-info-linkedin">
+                                <FaLinkedinIn className="footer__connect-two-info-icon" size={25}/>
+                            </a>
+
+                            <a href="#" className="footer__connect-two-info-instagram">
+                                <FaInstagram className="footer__connect-two-info-icon" size={25}/>
+                            </a>
+
+                            <a href="#" className="footer__connect-two-info-facebook">
+                                <FaFacebookF className="footer__connect-two-info-icon" size={25}/>
+                            </a>
+
+                            <a href="#" className="footer__connect-two-info-twitter">
+                                <FaTwitter className="footer__connect-two-info-icon" size={25}/>
+                            </a>
+
+                            <a href="#" className="footer__connect-two-info-github">
+                                <FaGithub className="footer__connect-two-info-icon" size={25}/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="footer__copywrite">
+                    <p className="footer__copywrite-text">&copy; Ridwan Kolawole</p>
+                </div>
+            </section>
         </div>
     )
 }
