@@ -53,10 +53,10 @@ const Portfolio = () => {
         <div className="content__info--project">
             <img src={require("./assets/shopwyse/shopwyse1.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" className="content__info--project-text-link">Shopwyse</a>
+                <a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Shopwyse</a>
                     <p className="content__info--project-text-note">
                         Shopwyse is an e-commerce mobile app that makes buying and selling easy for both 
-                        sellers and buyers.  
+                        sellers and buyers. 
                     </p>
             </div>
         </div>
@@ -64,7 +64,7 @@ const Portfolio = () => {
         <div id="good" className="content__info--project">
             <img src={require("./assets/auto/auto3.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="#" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
                     <p className="content__info--project-text-note">
                         This platform allows GTBank staff to personalize and send already written mails to developers 
                         registered on GTBank developers' portal.
@@ -75,7 +75,7 @@ const Portfolio = () => {
         <div id="good" className="content__info--project">
             <img src={require("./assets/gtaccount/account1.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GTAccount</a>
+                <a href="https://gtaccount.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">GTAccount</a>
                     
                     <p className="content__info--project-text-note">
                         This is a web application designed for prospective GTBank's customers to open 
@@ -89,7 +89,7 @@ const Portfolio = () => {
 <div className="content__info--project">
     <img src={require("./assets/thinklex/Thinklex1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" className="content__info--project-text-link">Thinklex</a>
+        <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Thinklex</a>
             <p className="content__info--project-text-note">
                 Thinklex is a mobile app built for Engineering students. The app contains a scientific calculator, 
                 four equations with four unknowns solver and Engineering formulas with how they are used.
@@ -102,7 +102,7 @@ const Portfolio = () => {
 <div id="good" className="content__info--project">
     <img src={require("./assets/natours/natours1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://tourandsmile.herokuapp.com" target="_blank" className="content__info--project-text-link">Tour And Smile</a>
+        <a href="https://tourandsmile.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour And Smile</a>
             <p className="content__info--project-text-note">
                 This is a website that allows people to book for a tour from different categories of tours available.
             </p>
@@ -112,7 +112,7 @@ const Portfolio = () => {
 <div id="good" className="content__info--project">
     <img src={require("./assets/dashboard/Dashboard1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://gtdashboard.herokuapp.com" target="_blank" className="content__info--project-text-link">Server Monitoring Dashboard</a>
+        <a href="https://gtdashboard.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Server Monitoring Dashboard</a>
             
             <p className="content__info--project-text-note">
                 This is an internal web app for monitoring servers with auto-notification and server uptime and 
@@ -126,7 +126,7 @@ const Portfolio = () => {
 <div className="content__info--project">
     <img src={require("./assets/encryption/encryption.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="content__info--project-text-link">Encryption Engine</a>
+        <a href="https://fintechdataencryption.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Encryption Engine</a>
             <p className="content__info--project-text-note">
                 This is a web app that allows users to encrypt their data when consuming an API.
             </p>
@@ -136,7 +136,7 @@ const Portfolio = () => {
 <div id="good" className="content__info--project">
     <img src={require("./assets/path-tracker/tracker2.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" className="content__info--project-text-link">Tour Tracker</a>
+        <a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour Tracker</a>
             <p className="content__info--project-text-note">
                 This is a mobile app that allows users to track and save the path they follow on map as they tour 
                 around the world.
@@ -147,7 +147,7 @@ const Portfolio = () => {
 <div id="good" className="content__info--project">
     <img src={require("./assets/request/request1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="https://ui-ux-request.herokuapp.com" target="_blank" className="content__info--project-text-link">Request App</a>
+        <a href="https://ui-ux-request.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Request App</a>
             
             <p className="content__info--project-text-note">
                 It is a web app which can be used by any organization to request for any service 
@@ -340,7 +340,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" className="main-project__info-story-project-title-name">Shopwyse</a></h2>
+                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Shopwyse</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -384,7 +384,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtautoresponse.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Email Servive Platform</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtautoresponse.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Email Servive Platform</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -424,7 +424,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtaccount.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">GTAccount</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtaccount.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">GTAccount</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -459,7 +459,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" className="main-project__info-story-project-title-name">Thinklex</a></h2>
+                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Thinklex</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -497,7 +497,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://tourandsmile.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Tour and Smile</a></h2>
+                       <h2 className="heading-secondary"><a href="https://tourandsmile.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Tour and Smile</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -532,7 +532,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtdashboard.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Server Monitoring Dashboard</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtdashboard.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Server Monitoring Dashboard</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -571,7 +571,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Encryption Engine</a></h2>
+                       <h2 className="heading-secondary"><a href="https://fintechdataencryption.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Encryption Engine</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -610,7 +610,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" className="main-project__info-story-project-title-name">Path Tracker</a></h2>
+                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Path Tracker</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -646,7 +646,7 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://ui-ux-request.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Request App</a></h2>
+                       <h2 className="heading-secondary"><a href="https://ui-ux-request.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Request App</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -705,23 +705,23 @@ const Portfolio = () => {
                     <div className="footer__connect-two">
                         <p className="footer__connect-one-heading">Social</p>
                         <div className="footer__connect-two-info">
-                            <a href="#" className="footer__connect-two-info-linkedin">
+                            <a href="https://www.linkedin.com/in/kolawole-ridwan-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-linkedin">
                                 <FaLinkedinIn className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
-                            <a href="#" className="footer__connect-two-info-instagram">
+                            <a href="https://www.instagram.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-instagram">
                                 <FaInstagram className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
-                            <a href="#" className="footer__connect-two-info-facebook">
+                            <a href="https://www.facebook.com/hurlaniyhi/" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-facebook">
                                 <FaFacebookF className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
-                            <a href="#" className="footer__connect-two-info-twitter">
+                            <a href="https://twitter.com/Kolawol35239232" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-twitter">
                                 <FaTwitter className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
-                            <a href="https://github.com/hurlaniyhi" target="_blank" className="footer__connect-two-info-github">
+                            <a href="https://github.com/hurlaniyhi" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-github">
                                 <FaGithub className="footer__connect-two-info-icon" size={25}/>
                             </a>
                         </div>

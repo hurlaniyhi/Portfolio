@@ -403,7 +403,10 @@ body {
         .content__info--project-text-link {
           font-size: 1.6rem;
           font-weight: 600;
-          margin: 0; }
+          margin: 0;
+          text-decoration: none; }
+          .content__info--project-text-link:hover {
+            text-decoration: underline; }
         .content__info--project-text-list2 {
           line-height: 2.5rem;
           padding-left: 0rem;

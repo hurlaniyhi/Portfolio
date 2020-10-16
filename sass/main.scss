@@ -660,6 +660,11 @@ body {
           font-size: 1.6rem;
           font-weight: 600;
           margin: 0;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
         &-list2 {
