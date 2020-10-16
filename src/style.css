@@ -652,7 +652,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding-bottom: 4rem; }
 
 .image-items {
   height: 27rem;
