@@ -721,7 +721,7 @@ const Portfolio = () => {
                                 <FaTwitter className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
-                            <a href="#" className="footer__connect-two-info-github">
+                            <a href="https://github.com/hurlaniyhi" target="_blank" className="footer__connect-two-info-github">
                                 <FaGithub className="footer__connect-two-info-icon" size={25}/>
                             </a>
                         </div>
