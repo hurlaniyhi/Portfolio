@@ -70,21 +70,21 @@ body {
   }
 }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(7rem);
-  }
+// @keyframes moveInRight {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(7rem);
+//   }
  
-  80% {
-    transform: translateX(-3rem); 
-  }
+//   80% {
+//     transform: translateX(-3rem); 
+//   }
 
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
+//   100% {
+//     opacity: 1;
+//     transform: translate(0);
+//   }
+// }
 
 @keyframes moveInBottom {
   0% {
@@ -753,7 +753,7 @@ body {
       // padding-left: 9rem;
       // font-size: $default-font-size;
       transform: skewX(-10deg);
-      animation: moveInRight 1s ease-out 5s;
+      //animation: moveInRight 1s ease-out 5s;
       transition: all 0.4s;
 
       @media (max-width: 580px) {
