@@ -6,7 +6,8 @@ const stateReducer = (state, action) => {
 
     switch (action.type){
 
-        case "change": return {...state, src: action.payload.image, color: action.payload.color}
+        case "change": return {...state, src: action.payload.image, color: action.payload.color,
+            projectName: action.payload.name}
     }
 
 }
@@ -16,16 +17,16 @@ const stateReducer = (state, action) => {
 export const StateProvider = (props) => {
 
 
-    const [state, dispatch] = useReducer(stateReducer,{src: "", color: ""})
+    const [state, dispatch] = useReducer(stateReducer,{src: "", color: "", projectName: ""})
 
 
-    const NavigateMe = async(history, image, color) => {
+    const NavigateMe = async(history, image, color, name) => {
 
         const variab = image.map(function(run)
         {
            return <img className="image-items" src={run}/>
         })
-       await dispatch({type: "change", payload: {image: variab, color}})
+       await dispatch({type: "change", payload: {image: variab, color, name}})
         history.push("/apk")
     }
 

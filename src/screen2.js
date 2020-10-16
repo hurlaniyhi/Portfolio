@@ -17,6 +17,7 @@ const Apk = () => {
     // function handleNav(){
     //     history.push("/")
     // }
+    // https://drive.google.com/file/d/1ZqWcFUOT6EtEtPCL3aawAq_a8G-7h2Yv/view?usp=sharing
 
     document.body.style.backgroundColor = "#34495e";
 
@@ -30,6 +31,7 @@ const Apk = () => {
                     <a className="home-button" onClick={()=>Home(history)} style={{color: state.color}}><FaHome className="home-logo" size={23}/><p className="span-text">Home</p></a>
                     <h2 className="image-text">Project Screenshots</h2>
                 </div>
+                <p style={{textAlign: "center", fontSize: "2.2rem", color: state.color, fontWeight: "bold"}}>{state.projectName}</p>
                 <div className="project-images">
                 {state.src}
                 </div>
@@ -37,7 +39,11 @@ const Apk = () => {
                 
             
         </div>
-        : <p style={{fontSize: "3.5rem", textAlign: "center", textTransform: "uppercase", marginTop: "25rem", fontWeight: "500", color: "white"}}>No Screenshot to display as no Project is Selected</p>}
+        : <div>
+            <p className="message">No Screenshot to display as no Project is Selected</p>
+            <a className="gohome" onClick={()=>Home(history)}><FaHome className="home-logo" size={23}/><p className="span-text">Home</p></a>
+          </div>}
+        
         </div>
     )
 }

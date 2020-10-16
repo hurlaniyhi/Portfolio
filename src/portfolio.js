@@ -53,7 +53,7 @@ const Portfolio = () => {
         <div className="content__info--project">
             <img src={require("./assets/shopwyse/shopwyse1.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">Shopwyse</a>
+                <a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" className="content__info--project-text-link">Shopwyse</a>
                     <p className="content__info--project-text-note">
                         Shopwyse is an e-commerce mobile app that makes buying and selling easy for both 
                         sellers and buyers.  
@@ -64,7 +64,7 @@ const Portfolio = () => {
         <div id="good" className="content__info--project">
             <img src={require("./assets/auto/auto3.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://gtautoresponse.herokuapp.com" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
+                <a href="#" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
                     <p className="content__info--project-text-note">
                         This platform allows GTBank staff to personalize and send already written mails to developers 
                         registered on GTBank developers' portal.
@@ -75,7 +75,7 @@ const Portfolio = () => {
         <div id="good" className="content__info--project">
             <img src={require("./assets/gtaccount/account1.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GT Account Opening App</a>
+                <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GTAccount</a>
                     
                     <p className="content__info--project-text-note">
                         This is a web application designed for prospective GTBank's customers to open 
@@ -89,7 +89,7 @@ const Portfolio = () => {
 <div className="content__info--project">
     <img src={require("./assets/thinklex/Thinklex1.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="#" target="_blank" className="content__info--project-text-link">Thinklex</a>
+        <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" className="content__info--project-text-link">Thinklex</a>
             <p className="content__info--project-text-note">
                 Thinklex is a mobile app built for Engineering students. The app contains a scientific calculator, 
                 four equations with four unknowns solver and Engineering formulas with how they are used.
@@ -136,7 +136,7 @@ const Portfolio = () => {
 <div id="good" className="content__info--project">
     <img src={require("./assets/path-tracker/tracker2.jpg")} alt="" className="content__info--project-image"/>
     <div className="content__info--project-text">
-        <a href="#" target="_blank" className="content__info--project-text-link">Tour Tracker</a>
+        <a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" className="content__info--project-text-link">Tour Tracker</a>
             <p className="content__info--project-text-note">
                 This is a mobile app that allows users to track and save the path they follow on map as they tour 
                 around the world.
@@ -212,12 +212,12 @@ const Portfolio = () => {
     return (
         <div className="container">
             <div className="header">
-                <div className="header__logo"><p onClick={()=>history.push("/Apk")}>RK</p></div>
+                <div className="header__logo"><p>RK</p></div>
                 <div className="header__button">
-                    <a className="header__button--btn" >ABOUT</a>
+                    <a href="#aboutme" className="header__button--btn" >ABOUT</a>
                     <a href="#good" className="header__button--btn">PROJECTS</a>
                     <a className="header__button--btn">BLOG</a>
-                    <a className="header__button--btn">CONTACT</a>
+                    <a href="#contacts" className="header__button--btn">CONTACT</a>
                 </div>
                 
                 <div class="navigation">
@@ -234,10 +234,10 @@ const Portfolio = () => {
                     <div class="navigation__background">&nbsp;</div>
                     <nav class="navigation__nav">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Project</a></li>
+                            <li class="navigation__item"><a href="#aboutme" class="navigation__link">About</a></li>
+                            <li class="navigation__item"><a href="#good" class="navigation__link">Project</a></li>
                             <li class="navigation__item"><a href="#" class="navigation__link">Blog</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                            <li class="navigation__item"><a href="#contacts" class="navigation__link">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -260,7 +260,7 @@ const Portfolio = () => {
             </div>
 
             <section className="content-body">
-            <div className="content">    
+            <div className="content" id="aboutme">    
                 <div className="content__info content__info--left">
                     <h2 className="content__info-subtitle">Briefly about me</h2>
                     <ul className="content__info--list">
@@ -270,7 +270,7 @@ const Portfolio = () => {
                         <li>Rich expertise in Mobile App Development: React-Native, Node and Mongodb</li>
                         <li>Rich expertise in Web development: React, Node, template(handlebars), Mongodb</li>
                     </ul>
-                    <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a >Download CV</a></div>
+                    <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a href="#" className="content__info--download-link">Download CV</a></div>
                 </div>
                 <div className="content__info content__info--right">
                     <h2 className="content__info-subtitle">Projects</h2>
@@ -336,11 +336,11 @@ const Portfolio = () => {
                 </div>
 
                 <div className="main-project__info">
-                    <h2 className="main-project__info-title">Project Details</h2>
+                    <h2 className="main-project__info-title" id="good">Project Details</h2>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="#" className="main-project__info-story-project-title-name">Shopwyse</a></h2>
+                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQqhHzfJttZCk23h_-BqibATsFUXthpr/view?usp=sharing" target="_blank" className="main-project__info-story-project-title-name">Shopwyse</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -378,13 +378,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image1,shopwyse)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image1,shopwyse,"Shopwyse")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtautoresponse.herokuapp.com" className="main-project__info-story-project-title-name">Email Servive Platform</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtautoresponse.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Email Servive Platform</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -418,13 +418,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image2,autoresponse)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image2,autoresponse,"Email Service Platform")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtaccount.herokuapp.com" className="main-project__info-story-project-title-name">GTB Account Opening</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtaccount.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">GTAccount</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -453,13 +453,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image3,account)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image3,account,"GTAccount")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="#" className="main-project__info-story-project-title-name">Thinklex</a></h2>
+                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" className="main-project__info-story-project-title-name">Thinklex</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -491,13 +491,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image4,thinklex)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image4,thinklex,"Thinklex")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://tourandsmile.herokuapp.com" className="main-project__info-story-project-title-name">Tour and Smile</a></h2>
+                       <h2 className="heading-secondary"><a href="https://tourandsmile.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Tour and Smile</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -526,13 +526,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image5,natour)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image5,natour,"Tour and Smile")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtdashboard.herokuapp.com" className="main-project__info-story-project-title-name">Server Monitoring Dashboard</a></h2>
+                       <h2 className="heading-secondary"><a href="https://gtdashboard.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Server Monitoring Dashboard</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -565,13 +565,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image6,dashboard)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image6,dashboard,"Server Monitoring Dashboard")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://fintechdataencryption.herokuapp.com" className="main-project__info-story-project-title-name">Encryption Engine</a></h2>
+                       <h2 className="heading-secondary"><a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Encryption Engine</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -604,13 +604,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image7,engine)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image7,engine,"Encryption Engine")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="#" className="main-project__info-story-project-title-name">Path Tracker</a></h2>
+                       <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" className="main-project__info-story-project-title-name">Path Tracker</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -640,13 +640,13 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image8,tracker)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image8,tracker,"Tour Tracker")}>Project Screnshoots</a>
                       </div>
                     </div>
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://ui-ux-request.herokuapp.com" className="main-project__info-story-project-title-name">Request App</a></h2>
+                       <h2 className="heading-secondary"><a href="https://ui-ux-request.herokuapp.com" target="_blank" className="main-project__info-story-project-title-name">Request App</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
@@ -676,7 +676,7 @@ const Portfolio = () => {
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image9,request)}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image9,request,"Request App")}>Project Screnshoots</a>
                       </div>
                     </div>
 
@@ -692,7 +692,7 @@ const Portfolio = () => {
                     <img src={require("./assets/rhydhur-logo.png")} className="footer-brand-logo" />
                     {/* <a href="#" className="footer-brand-link"><p className="footer-brand-link-text">rhydhur-tech.herokuapp.com</p></a> */}
                 </div>
-                <div className="footer__connect">
+                <div className="footer__connect" id="contacts">
                     <div className="footer__connect-one">
                         <p className="footer__connect-one-heading">Contacts</p>
                         <ul className="footer__connect-one-info">
