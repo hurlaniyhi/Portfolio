@@ -4,7 +4,7 @@ import './style.css'
 import {FaDownload, FaArrowLeft, FaArrowRight, FaBars, FaHome, FaLinkedinIn,
     FaInstagram, FaFacebookF, FaTwitter, FaGithub} from 'react-icons/fa'
 import StateContext from "./context/StateContext"
-var profile = require("./dp.jpg")
+var profile = require("./dp3.jpg")
 var GTAccount = require("./assets/shopwyse/shopwyse1.jpg")
 var AutoResponse = require("./assets/shopwyse/shopwyse8.jpg")
 var video1 = require("./assets/video.mp4")
@@ -270,7 +270,7 @@ const Portfolio = () => {
                         <li>Rich expertise in Mobile App Development: React-Native, Node and Mongodb</li>
                         <li>Rich expertise in Web development: React, Node, template(handlebars), Mongodb</li>
                     </ul>
-                    <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a href="#" className="content__info--download-link">Download CV</a></div>
+                    <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a href="https://drive.google.com/file/d/1LNj1ZHwCG9TAibxkq1VIuHp0W5owhROf/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--download-link">Download CV</a></div>
                 </div>
                 <div className="content__info content__info--right">
                     <h2 className="content__info-subtitle">Projects</h2>
