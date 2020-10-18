@@ -264,13 +264,15 @@ const Portfolio = () => {
                 <div className="content__info content__info--left">
                     <h2 className="content__info-subtitle">Briefly about me</h2>
                     <ul className="content__info--list">
+                        <li>A <span style={{fontWeight: "700", color: "#34495E"}}>Software Engineer</span> that enjoys making a positive contribution to the technological future.</li>
+                        <li>A <span style={{fontWeight: "700", color: "#34495E"}}>First-class</span> graduate in Electrical and Electronics Engineering.</li>
                         <li>1+ years of professional expertise in the IT industry</li>
                         <li>Experience in React.js and Node.js scripting languages</li>
                         <li>Solid experience in Javascript, C++, C and Python programming languages </li>
-                        <li>Rich expertise in Mobile App Development: React-Native, Node and Mongodb</li>
-                        <li>Rich expertise in Web development: React, Node, template(handlebars), Mongodb</li>
+                        <li>Rich expertise in <span style={{fontWeight: "700", color: "#34495E"}}>Mobile App Development</span>: React-Native, Node and Mongodb</li>
+                        <li>Rich expertise in <span style={{fontWeight: "700", color: "#34495E"}}>Web App Development</span>: React, Node, template(handlebars), Mongodb.</li>
                     </ul>
-                    <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a href="https://drive.google.com/file/d/1LNj1ZHwCG9TAibxkq1VIuHp0W5owhROf/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--download-link">Download CV</a></div>
+                    <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a href="https://drive.google.com/file/d/1LrJkSjzHSbpl2MQMcU2ekEijWZXFPpmP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--download-link">Download CV</a></div>
                 </div>
                 <div className="content__info content__info--right">
                     <h2 className="content__info-subtitle">Projects</h2>
