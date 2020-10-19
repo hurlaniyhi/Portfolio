@@ -440,7 +440,7 @@ body {
 
 
 
-
+// HEADER CONTAINER
 
 .header_container {
   // padding-top: 2rem;
@@ -532,6 +532,9 @@ body {
     line-height: 2.3rem;
   }
 }
+
+
+// BRIEF ABOUT ME AND PROJECT INTRO
 
 .content-body {
   background-color: #ecf0f1;
@@ -721,6 +724,7 @@ body {
     padding: 4rem 3rem;
 
     &-title {
+      //display: inline-block;
       font-size: 3rem;
       color: #34495e;
       font-weight: bold;
@@ -1349,6 +1353,253 @@ body {
   }
 }
 
+
+
+// RELATE WITH ME
+
+.relate {
+  padding: 3rem 0 30rem 0;
+  background-color: #ecf0f1;
+  margin-top: -1rem;
+  position: relative;
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+
+    &-button {
+      padding: 1.5rem 0;
+      background-color: white;
+      width: 25rem;
+      //display: inline-block;
+      color: #34495e;
+      //border: 1px solid #34495e;
+      text-decoration: none;
+      outline: none;
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      text-align: center;
+      
+      cursor: pointer;
+      transform: translateX(-50%);
+      transition: all 0.5s;
+        
+
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 1rem;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          transition: all 0.4s;
+        }
+
+        &:hover,
+        &:active {
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+          &::after {
+            transform: scaleX(1.2) scaleY(1.6);
+            background-color: #34495e;
+            opacity: 0;
+          }
+        }
+
+    }
+  }
+}
+
+
+// COMMENTS
+
+.comment-title {
+  margin-top: 6rem;
+  font-size: 3.5rem;
+  color: white;
+  margin: 4rem 0 2rem 0;
+}
+
+.comment {
+  //background-color: green;
+  margin: 0 auto;
+  width: 55%;
+  padding: 0 0 4rem 0;
+
+  @media (max-width: 1120px) {
+    width: 70%
+  }
+
+  @media (max-width: 600px) {
+    width: 80%
+  }
+
+  @media (max-width: 450px) {
+    width: 90%
+  }
+  
+
+
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    outline-offset: 1.8rem; 
+    outline: .5rem solid green;
+    margin-bottom: 11rem;
+
+    &-user {
+      width: 60%;
+      padding: 1.8rem 2rem;
+      margin: 1.5rem auto;
+      background-color: rgba(white, 1);
+      border: none;
+      border: 2px solid transparent;
+      outline: none;
+
+      @media (max-width: 670px) {
+        width: 70%
+      }
+
+      &:focus {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        border: 3px solid #6d9c7d;
+      }
+
+      &:focus:invalid{
+        border: 3px solid #ff7730;
+      }
+
+    }
+
+    &-post {
+      width: 60%;
+      padding: 2rem;
+      height: 10rem;
+      margin: 1.5rem auto;
+      background-color: rgba(white, 1);
+      border: none;
+      outline: none;
+
+      @media (max-width: 670px) {
+        width: 70%;
+        height: 13rem;
+      }
+
+      &:focus {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        border: 3px solid #6d9c7d;
+      }
+
+      &:focus:invalid{
+        border: 3px solid #ff7730;
+      }
+    }
+    
+    &-send {
+      padding: 1.2rem 0;
+      background-color: white;
+      width: 13rem;
+      //display: inline-block;
+      color: #34495e;
+      //border: 1px solid #34495e;
+      text-decoration: none;
+      outline: none;
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      margin: 2rem auto;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.5s;  
+
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          width: 100%;
+          border-radius: 1rem;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+          transition: all 0.4s;
+        }
+
+        &:hover,
+        &:active {
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+          &::after {
+            transform: scaleX(1.2) scaleY(1.6);
+            background-color: white;
+            opacity: 0;
+          }
+        }
+      
+    }
+    
+    
+  }
+
+  &__all {
+    margin: 3.5rem 0 0 0;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 1.5rem;
+    display: inline-block;
+    
+
+    &:not(:first-child) {
+      margin: 0 0 3rem 0;
+    }
+
+    &-text {
+      margin: 0;
+     //background-color: purple;
+     font-size: 1.8rem;
+     font-weight: 700;
+     color: green;
+    
+    }
+
+    &-text1 {
+      margin: 0;
+      margin: 1rem 0 .2rem 0;
+      //background-color:black;
+      color: #34495e;
+      overflow: hidden;
+      font-size: 1.5rem;
+    
+    }
+  }
+
+  &__title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+}
+// .arrange {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 
 

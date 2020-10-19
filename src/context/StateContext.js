@@ -27,7 +27,7 @@ export const StateProvider = (props) => {
            return <img className="image-items" src={run}/>
         })
        await dispatch({type: "change", payload: {image: variab, color, name}})
-        history.push("/apk")
+        history.push("/screenshots")
     }
 
     const Home = (history) => {

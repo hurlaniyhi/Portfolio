@@ -4,6 +4,7 @@ import './style.css'
 import {FaDownload, FaArrowLeft, FaArrowRight, FaBars, FaHome, FaLinkedinIn,
     FaInstagram, FaFacebookF, FaTwitter, FaGithub} from 'react-icons/fa'
 import StateContext from "./context/StateContext"
+//import {History} from 'react-router-dom'
 var profile = require("./dp3.jpg")
 var GTAccount = require("./assets/shopwyse/shopwyse1.jpg")
 var AutoResponse = require("./assets/shopwyse/shopwyse8.jpg")
@@ -16,12 +17,18 @@ var video2 = require("./assets/video.webm")
 
 
 
+
 const Portfolio = () => { 
+
 
     const {state, NavigateMe} = useContext(StateContext)
 
     const [info, setInfo] = useState({project: 0, total: 2})
     const history = useHistory()
+
+    function comment(){
+        history.push("/comments")
+    }
 
     function nextProjects() {
         setInfo({...info, project: info.project + 1})
@@ -685,9 +692,14 @@ const Portfolio = () => {
                 </div>
             </section>
 
-            {/* <section>
-                <p className="contact-me"><span className="childish">My name</span></p>
-            </section> */}
+            <section className="relate">
+                <h2 className="main-project__info-title relate__title" id="good">Relate with me</h2>
+                <div className="relate__info">
+                    <a onClick={()=> comment()} className="relate__info-button">Leave a comment</a>
+                    <a className="relate__info-button">Send a message</a>
+                    <a className="relate__info-button">View articles</a>
+                </div>
+            </section>
 
             <section className="footer">
                 <div className="footer-brand">
@@ -707,7 +719,7 @@ const Portfolio = () => {
                     <div className="footer__connect-two">
                         <p className="footer__connect-one-heading">Social</p>
                         <div className="footer__connect-two-info">
-                            <a href="https://www.linkedin.com/in/kolawole-ridwan-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-linkedin">
+                            <a href="https://www.linkedin.com/in/ridwan-kolawole-7b4931184/?originalSubdomain=ng" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-linkedin">
                                 <FaLinkedinIn className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
