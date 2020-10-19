@@ -50,10 +50,11 @@ const Comment = () => {
             comment: parameter.comment
         }
 
-        document.querySelector(".spin").style.display = "block"
-        document.querySelector(".poster").style.display = "none"
 
         if(parameter.user && parameter.comment){
+            document.querySelector(".spin").style.display = "block"
+            document.querySelector(".poster").style.display = "none"
+            
             axios.post('https://analytics-app-backend.herokuapp.com/addComment', data).then(async(res)=>{
 
             
