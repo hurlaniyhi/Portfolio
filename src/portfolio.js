@@ -30,6 +30,10 @@ const Portfolio = () => {
         history.push("/comments")
     }
 
+    function message(){
+        history.push("/message")
+    }
+
     function nextProjects() {
         setInfo({...info, project: info.project + 1})
         if(info.project + 1 === info.total){
@@ -696,7 +700,7 @@ const Portfolio = () => {
                 <h2 className="main-project__info-title relate__title" id="good">Relate with me</h2>
                 <div className="relate__info">
                     <a onClick={()=> comment()} className="relate__info-button">Leave a comment</a>
-                    <a className="relate__info-button">Send a message</a>
+                    <a onClick={()=> message()} className="relate__info-button">Send a message</a>
                     <a className="relate__info-button">View articles</a>
                 </div>
             </section>
