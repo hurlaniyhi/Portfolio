@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "compile:sass": "node-sass sass/main.scss src/style.css -w"
-  },
+  }, 
   "eslintConfig": {
     "extends": "react-app"
   },

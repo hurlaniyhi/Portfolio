@@ -1013,3 +1013,153 @@ body {
     color: white;
     font-size: 2.5rem;
     margin-bottom: 2.5rem; }
+
+.sms {
+  position: relative; }
+  .sms__container {
+    background-color: white;
+    margin: 2rem auto;
+    width: 40%;
+    border-bottom-left-radius: 20%;
+    border-top-right-radius: 20%; }
+    @media (max-width: 1000px) {
+      .sms__container {
+        width: 50%; } }
+    @media (max-width: 720px) {
+      .sms__container {
+        width: 60%; } }
+    @media (max-width: 520px) {
+      .sms__container {
+        width: 65%; } }
+    @media (max-width: 450px) {
+      .sms__container {
+        width: 73%; } }
+    @media (max-width: 370px) {
+      .sms__container {
+        width: 80%; } }
+    @media (max-width: 300px) {
+      .sms__container {
+        width: 85%; } }
+    .sms__container-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      padding: 0 0 13rem 0; }
+    .sms__container-name {
+      width: 60%;
+      padding: 1.5rem;
+      margin: 2rem auto 0 auto;
+      border-radius: 2px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.8);
+      outline: none;
+      border-bottom: 1px solid #777;
+      display: block;
+      transition: all .3s; }
+      .sms__container-name:focus {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border-bottom: 3px solid #6d9c7d; }
+      .sms__container-name:focus:invalid {
+        border-bottom: 3px solid #ff7730; }
+      .sms__container-name::-webkit-input-placeholder {
+        color: #777; }
+    .sms__container-label {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding-top: 1rem;
+      padding-left: 20%;
+      display: block;
+      transition: all .3s; }
+    .sms__container-name:placeholder-shown ~ .sms__container-label {
+      transform: translateY(-4.5rem);
+      visibility: hidden;
+      opacity: 0; }
+    .sms__container-subject {
+      width: 60%;
+      padding: 2rem;
+      margin: 2rem auto 0 auto;
+      border-radius: 2px;
+      border: none;
+      background-color: whitesmoke;
+      outline: none;
+      border-bottom: 1px solid transparent;
+      transition: all .3s; }
+      .sms__container-subject:focus {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border: 3px solid #6d9c7d; }
+      .sms__container-subject:focus:invalid {
+        border: 2px solid #ff7730; }
+      .sms__container-subject::-webkit-input-placeholder {
+        color: #777; }
+    .sms__container-content {
+      width: 60%;
+      padding: 2rem;
+      margin: 2rem auto 0 auto;
+      border-radius: 2px;
+      border: none;
+      outline: none;
+      border: 1px solid #777;
+      height: 13rem;
+      transition: all .3s; }
+      .sms__container-content:focus {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border: 3px solid #6d9c7d; }
+      .sms__container-content:focus:invalid {
+        border: 2px solid #ff7730; }
+      .sms__container-content::-webkit-input-placeholder {
+        color: #777; }
+
+.mail-button {
+  padding: 1.5rem 2rem;
+  background-color: #34495e;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 10rem;
+  width: 15rem;
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: 500;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+  transition: all 0.5s; }
+  .mail-button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s; }
+  .mail-button:hover, .mail-button:active {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    .mail-button:hover::after, .mail-button:active::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      background-color: #34495e;
+      opacity: 0; }
+
+.email-title {
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2.4rem;
+  text-transform: uppercase; }
+
+.seperate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.sms-icon {
+  position: absolute;
+  top: 5%;
+  left: 17%; }
