@@ -26,8 +26,8 @@ const Portfolio = () => {
     const [info, setInfo] = useState({project: 0, total: 2})
     const history = useHistory()
 
-    function comment(){
-        history.push("/comments")
+    function article(){
+        history.push("/articles")
     }
 
     function message(){
@@ -699,9 +699,8 @@ const Portfolio = () => {
             <section className="relate">
                 <h2 className="main-project__info-title relate__title" id="good">Relate with me</h2>
                 <div className="relate__info">
-                    <a onClick={()=> comment()} className="relate__info-button">Leave a comment</a>
                     <a onClick={()=> message()} className="relate__info-button">Send a message</a>
-                    <a className="relate__info-button">View articles</a>
+                    <a onClick={()=> article()} className="relate__info-button">View articles</a>
                 </div>
             </section>
 

@@ -32,7 +32,8 @@ const Message = () => {
             
             if(res.data.message == "success"){
                     
-                alert("Mail successfully sent")
+                alert("Mail successfully sent to Ridwan")
+                setMessage({...message, subject: "", sender: "", content: "", email: ""})
             }
             else {
                 alert("Something went wrong")
@@ -59,22 +60,22 @@ const Message = () => {
     return (
         <div className="sms">
             <div className="sms__container">
-                <h2 className="main-project__info-title email-title">Send a mail</h2>
+                <h2 className="main-project__info-title email-title">Send me a mail</h2>
                 <div className="sms__container-items">
                     {/* <FaUser className="sms-icon" size={25}/> */}
-                    <input type="text" className="sms__container-name" name="sender" onChange={(e)=>handleChange(e)} placeholder="Full Name" id="username" autoComplete="off" required />
+                    <input type="text" value={message.sender} className="sms__container-name" name="sender" onChange={(e)=>handleChange(e)} placeholder="Full name" id="username" autoComplete="off" required />
                     <label for="username" className="sms__container-label">Full name</label>
                     
-                    <input type="email" className="sms__container-name" name="email" onChange={(e)=>handleChange(e)} placeholder="Email address" id="myemail" autoComplete="off" required />
-                    <label for="myemail" className="sms__container-label">Email address</label>
+                    <input type="email" value={message.email} className="sms__container-name" name="email" onChange={(e)=>handleChange(e)} placeholder="Your email address" id="myemail" autoComplete="off" required />
+                    <label for="myemail" className="sms__container-label">Your email address</label>
 
-                    <input type="text" className="sms__container-subject" name="subject" onChange={(e)=>handleChange(e)} placeholder="Email Subject" autoComplete="off" required />
+                    <input type="text" value={message.subject} className="sms__container-subject" name="subject" onChange={(e)=>handleChange(e)} placeholder="Email Subject" autoComplete="off" required />
 
-                    <textarea className="sms__container-content" name="content" onChange={(e)=>handleChange(e)} placeholder="Email Content" autoComplete="off" required></textarea>
+                    <textarea value={message.content} className="sms__container-content" name="content" onChange={(e)=>handleChange(e)} placeholder="Email Content" autoComplete="off" required></textarea>
                     <a className="mail-button" onClick={()=>handlePost()}>Send Mail</a>
                     <Loader className="loads"
                         type="Puff"
-                        color="#00BFFF"
+                        color="#34495e"
                         height={70}
                         width={70}
                         // timeout={3000} //3 secs

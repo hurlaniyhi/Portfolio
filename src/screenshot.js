@@ -17,8 +17,7 @@ const Apk = () => {
     // function handleNav(){
     //     history.push("/")
     // }
-    // https://drive.google.com/file/d/1ZqWcFUOT6EtEtPCL3aawAq_a8G-7h2Yv/view?usp=sharing
-
+   
     document.body.style.backgroundColor = "#34495e";
 
     return(
