@@ -102,7 +102,7 @@ const Comment = () => {
             <div className="comment">
                 <div className="comment__form">
                     <input className="comment__form-user" type="text" name="user" onChange={(e)=>handleUser(e)} placeholder="Your name" autoComplete={'' + Math.random()} />
-                    <textarea className="comment__form-post" name="comment" onChange={(e)=>handleUser(e)} placeholder="Give comment"></textarea>
+                    <textarea className="comment__form-post" name="comment" onChange={(e)=>handleUser(e)} placeholder="Your comment"></textarea>
                     <a className="comment__form-send poster" onClick={()=>handlePost()}>Post</a>
                     <Loader className="spin"
                         type="Puff"
