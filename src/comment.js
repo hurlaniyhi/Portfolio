@@ -101,12 +101,12 @@ const Comment = () => {
             <h2 className="main-project__info-title relate__title comment-title">Comment Section</h2>
             <div className="comment">
                 <div className="comment__form">
-                    <input className="comment__form-user" type="text" name="user" onChange={(e)=>handleUser(e)} placeholder="Your name" />
+                    <input className="comment__form-user" type="text" name="user" onChange={(e)=>handleUser(e)} placeholder="Your name" autoComplete={'' + Math.random()} />
                     <textarea className="comment__form-post" name="comment" onChange={(e)=>handleUser(e)} placeholder="Give comment"></textarea>
                     <a className="comment__form-send poster" onClick={()=>handlePost()}>Post</a>
                     <Loader className="spin"
                         type="Puff"
-                        color="#00BFFF"
+                        color="white"
                         height={70}
                         width={70}
                         // timeout={3000} //3 secs

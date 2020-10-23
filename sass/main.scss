@@ -679,15 +679,18 @@ body {
         // width: 40rem;
         margin-left: 2rem;
 
-        &-link {
+        &-link{
+          &:link, &:visited {
           font-size: 1.6rem;
           font-weight: 600;
           margin: 0;
           text-decoration: none;
+          color: #551A8B;
 
           &:hover {
             text-decoration: underline;
           }
+        }
         }
 
         &-list2 {

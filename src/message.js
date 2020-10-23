@@ -63,15 +63,16 @@ const Message = () => {
                 <h2 className="main-project__info-title email-title">Send me a mail</h2>
                 <div className="sms__container-items">
                     {/* <FaUser className="sms-icon" size={25}/> */}
-                    <input type="text" value={message.sender} className="sms__container-name" name="sender" onChange={(e)=>handleChange(e)} placeholder="Full name" id="username" autoComplete="off" required />
+                    
+                    <input type="text" value={message.sender} className="sms__container-name" name="sender" onChange={(e)=>handleChange(e)} placeholder="Full name" id="username" autoComplete={'' + Math.random()} required />
                     <label for="username" className="sms__container-label">Full name</label>
                     
-                    <input type="email" value={message.email} className="sms__container-name" name="email" onChange={(e)=>handleChange(e)} placeholder="Your email address" id="myemail" autoComplete="off" required />
+                    <input type="email" value={message.email} className="sms__container-name" name="email" onChange={(e)=>handleChange(e)} placeholder="Your email address" id="myemail" autoComplete={'' + Math.random()} required />
                     <label for="myemail" className="sms__container-label">Your email address</label>
 
-                    <input type="text" value={message.subject} className="sms__container-subject" name="subject" onChange={(e)=>handleChange(e)} placeholder="Email Subject" autoComplete="off" required />
+                    <input type="text" value={message.subject} className="sms__container-subject" name="subject" onChange={(e)=>handleChange(e)} placeholder="Email Subject" autoComplete={'' + Math.random()}/>
 
-                    <textarea value={message.content} className="sms__container-content" name="content" onChange={(e)=>handleChange(e)} placeholder="Email Content" autoComplete="off" required></textarea>
+                    <textarea value={message.content} className="sms__container-content" name="content" onChange={(e)=>handleChange(e)} placeholder="Email Content" autoComplete={'' + Math.random()} required></textarea>
                     <a className="mail-button" onClick={()=>handlePost()}>Send Mail</a>
                     <Loader className="loads"
                         type="Puff"

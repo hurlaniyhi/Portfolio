@@ -400,12 +400,13 @@ body {
         align-self: center; }
       .content__info--project-text {
         margin-left: 2rem; }
-        .content__info--project-text-link {
+        .content__info--project-text-link:link, .content__info--project-text-link:visited {
           font-size: 1.6rem;
           font-weight: 600;
           margin: 0;
-          text-decoration: none; }
-          .content__info--project-text-link:hover {
+          text-decoration: none;
+          color: #551A8B; }
+          .content__info--project-text-link:link:hover, .content__info--project-text-link:visited:hover {
             text-decoration: underline; }
         .content__info--project-text-list2 {
           line-height: 2.5rem;
