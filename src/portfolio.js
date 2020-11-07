@@ -735,7 +735,7 @@ const Portfolio = () => {
                                 <FaFacebookF className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
-                            <a href="https://twitter.com/Kolawol35239232" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-twitter">
+                            <a href="https://twitter.com/MisterJS" target="_blank" rel="noopener noreferrer" className="footer__connect-two-info-twitter">
                                 <FaTwitter className="footer__connect-two-info-icon" size={25}/>
                             </a>
 
