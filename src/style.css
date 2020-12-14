@@ -1188,7 +1188,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20rem 50%; }
+  margin: 20rem 50% 0rem 50%; }
   .articles__container-but1 {
     animation-name: moveInside;
     animation-duration: 1s;

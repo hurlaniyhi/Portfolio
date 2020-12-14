@@ -277,12 +277,12 @@ const Portfolio = () => {
                     <ul className="content__info--list">
                         <li>A <span style={{fontWeight: "700", color: "#34495E"}}>Software Engineer</span> that enjoys making a positive contribution to the technological future.</li>
                         <li>A <span style={{fontWeight: "700", color: "#34495E"}}>First-class</span> graduate in Electrical and Electronics Engineering.</li>
-                        <li>1+ years of professional expertise in the IT industry.</li>
+                        <li>2+ years of professional expertise in the IT industry.</li>
                         <li>Experienced front-end and back-end developer.</li>
                         <li>Experience in React.js and Node.js scripting languages.</li>
                         <li>Solid experience in Javascript, C++, C, R and Python programming languages. </li>
                         <li>Rich expertise in <span style={{fontWeight: "700", color: "#34495E"}}>Mobile App Development</span>: React-Native, Node and MongoDb</li>
-                        <li>Rich expertise in <span style={{fontWeight: "700", color: "#34495E"}}>Web App Development</span>: React.js, Node.js, Handlebars, MongoDb, HTML, CSS, SASS, Javascript.</li>
+                        <li>Rich expertise in <span style={{fontWeight: "700", color: "#34495E"}}>Web App Development</span>: React.js, Vue.js, Node.js, Handlebars, MongoDb, HTML, CSS, SASS, Javascript.</li>
                     </ul>
                     <div className="content__info--download"><FaDownload style={{marginRight: "1rem"}}/><a href="https://drive.google.com/file/d/1LrJkSjzHSbpl2MQMcU2ekEijWZXFPpmP/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--download-link">Download CV</a></div>
                 </div>
