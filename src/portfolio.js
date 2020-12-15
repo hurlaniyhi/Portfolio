@@ -13,17 +13,12 @@ var video2 = require("./assets/video.webm")
 
 
 
-
-
-
-
-
 const Portfolio = () => { 
 
 
     const {state, NavigateMe} = useContext(StateContext)
 
-    const [info, setInfo] = useState({project: 0, total: 2})
+    const [info, setInfo] = useState({project: 0, total: 3})
     const history = useHistory()
 
     function article(){
@@ -97,75 +92,95 @@ const Portfolio = () => {
     </div>,
 
 <div>
-<div className="content__info--project">
-    <img src={require("./assets/thinklex/Thinklex1.jpg")} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Thinklex</a>
-            <p className="content__info--project-text-note">
-                Thinklex is a mobile app built for Engineering students. The app contains a scientific calculator, 
-                four equations with four unknowns solver and Engineering formulas with how they are used.
-
-
-            </p>
+    <div className="content__info--project">
+        <img src={require("./assets/homepage.png")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://check-d-deck.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Staff Manager App</a>
+                <p className="content__info--project-text-note">
+                    This is an internal web app used by HR/Admin to manage departments, staff, activities, documents e.t.c.
+                </p>
+        </div>
     </div>
-</div>
 
-<div id="good" className="content__info--project">
-    <img src={require("./assets/natours/natours1.jpg")} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://tourandsmile.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour And Smile</a>
-            <p className="content__info--project-text-note">
-                This is a website that allows people to book for a tour from different categories of tours available.
-            </p>
+    <div id="good" className="content__info--project">
+        <img src={require("./assets/cbt.png")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://cbtquiz.netlify.app" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">CBT Test</a>
+                <p className="content__info--project-text-note">
+                    This is a web application that can be used to conduct any online test and exam for students.
+                </p>
+        </div>
     </div>
-</div>
 
-<div id="good" className="content__info--project">
-    <img src={require("./assets/dashboard/Dashboard1.jpg")} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://gtdashboard.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Server Monitoring Dashboard</a>
-            
-            <p className="content__info--project-text-note">
-                This is an internal web app for monitoring servers with auto-notification and server uptime and 
-                downtime analysis.
-            </p>
+    <div className="content__info--project">
+        <img src={require("./assets/thinklex/Thinklex1.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://drive.google.com/file/d/1KRUZLoBuwCXuVtVi5oxua56ho2KLxck0/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Thinklex</a>
+                <p className="content__info--project-text-note">
+                    Thinklex is a mobile app built for Engineering students. The app contains a scientific calculator, 
+                    four equations with four unknowns solver and Engineering formulas with how they are used.
+                </p>
+        </div>
     </div>
-</div>
 </div>,
 
 <div>
-<div className="content__info--project">
-    <img src={require("./assets/encryption/encryption.jpg")} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://fintechdataencryption.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Encryption Engine</a>
-            <p className="content__info--project-text-note">
-                This is a web app that allows users to encrypt their data when consuming an API.
-            </p>
+    <div id="good" className="content__info--project">
+        <img src={require("./assets/natours/natours1.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://tourandsmile.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour And Smile</a>
+                <p className="content__info--project-text-note">
+                    This is a website that allows people to book for a tour from different categories of tours available.
+                </p>
+        </div>
     </div>
-</div>
 
-<div id="good" className="content__info--project">
-    <img src={require("./assets/path-tracker/tracker2.jpg")} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour Tracker</a>
-            <p className="content__info--project-text-note">
-                This is a mobile app that allows users to track and save the path they follow on map as they tour 
-                around the world.
-            </p>
+    <div id="good" className="content__info--project">
+        <img src={require("./assets/dashboard/Dashboard1.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://gtdashboard.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Server Monitoring Dashboard</a>
+                
+                <p className="content__info--project-text-note">
+                    This is an internal web app for monitoring servers with auto-notification and server uptime and 
+                    downtime analysis.
+                </p>
+        </div>
     </div>
-</div>
 
-<div id="good" className="content__info--project">
-    <img src={require("./assets/request/request1.jpg")} alt="" className="content__info--project-image"/>
-    <div className="content__info--project-text">
-        <a href="https://ui-ux-request.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Request App</a>
-            
-            <p className="content__info--project-text-note">
-                It is a web app which can be used by any organization to request for any service 
-                of the organization that owns the app.
-            </p>
+    <div className="content__info--project">
+        <img src={require("./assets/encryption/encryption.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://fintechdataencryption.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Encryption Engine</a>
+                <p className="content__info--project-text-note">
+                    This is a web app that allows users to encrypt their data when consuming an API.
+                </p>
+        </div>
     </div>
-</div>
+</div>,
+
+<div>
+    <div id="good" className="content__info--project">
+        <img src={require("./assets/path-tracker/tracker2.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour Tracker</a>
+                <p className="content__info--project-text-note">
+                    This is a mobile app that allows users to track and save the path they follow on map as they tour 
+                    around the world.
+                </p>
+        </div>
+    </div>
+
+    <div id="good" className="content__info--project">
+        <img src={require("./assets/request/request1.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://ui-ux-request.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Request App</a>
+                
+                <p className="content__info--project-text-note">
+                    It is a web app which can be used by any organization to request for any service 
+                    of the organization that owns the app.
+                </p>
+        </div>
+    </div>
 </div>
     
     ]
@@ -206,6 +221,13 @@ const Portfolio = () => {
     require("./assets/request/request4.jpg"), require("./assets/request/request5.jpg"), require("./assets/request/request6.jpg"),
     require("./assets/request/request7.jpg"), require("./assets/request/request8.jpg")]
 
+    const image10 = [require("./assets/manager/manager1.png"), require("./assets/manager/manager2.png"), require("./assets/manager/manager3.png"),
+    require("./assets/manager/manager4.png"), require("./assets/manager/manager5.png"), require("./assets/manager/manager6.png"),
+    require("./assets/manager/manager7.png"), require("./assets/manager/manager8.png")]
+
+    const image11 = [require("./assets/cbt/cbt1.png"), require("./assets/cbt/cbt2.png"), require("./assets/cbt/cbt3.png"),
+    require("./assets/cbt/cbt4.png")]
+
 
     const shopwyse = "green"
     const autoresponse = "#D94F00"
@@ -216,6 +238,8 @@ const Portfolio = () => {
     const engine = "#000"
     const tracker = "#9263CD"
     const request = "#F3DC40"
+    const manager = "#081B46"
+    const cbt = "#C582D5"
 
     document.body.style.backgroundColor = "white";
 
@@ -288,39 +312,7 @@ const Portfolio = () => {
                 </div>
                 <div className="content__info content__info--right">
                     <h2 className="content__info-subtitle">Projects</h2>
-                    {/* <div className="content__info--project">
-                        <img src={GTAccount} alt="" className="content__info--project-image"/>
-                        <div className="content__info--project-text">
-                            <a href="https://gtaccount.herokuapp.com" target="_blank" className="content__info--project-text-link">GT Account Opening App</a>
-                            <ul style={{listStyle: "none"}} className="content__info--project-text-list2">
-                            <li className="content__info--project-text-note">This is a web application designed for prospective GTBank's customers </li>
-                            <li className="content__info--project-text-note">to open an account in less than 3 minutes.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="good" className="content__info--project">
-                        <img src={AutoResponse} alt="" className="content__info--project-image"/>
-                        <div className="content__info--project-text">
-                            <a href="https://gtautoresponse.herokuapp.com" target="_blank" className="content__info--project-text-link">APIC's Auto Response Mail Platform</a>
-                            <ul style={{listStyle: "none"}} className="content__info--project-text-list2">
-                            <li className="content__info--project-text-note">This platform allows GTBank staff to personalize and send already </li>
-                            <li className="content__info--project-text-note">written mails to developers registered on GTBank developers' </li>
-                            <li className="content__info--project-text-note">portal.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="good" className="content__info--project">
-                        <img src={AutoResponse} alt="" className="content__info--project-image"/>
-                        <div className="content__info--project-text">
-                            <a href="https://fintechdataencryption.herokuapp.com" target="_blank" className="content__info--project-text-link">Encryption Engine</a>
-                            <ul style={{listStyle: "none"}} className="content__info--project-text-list2">
-                            <li className="content__info--project-text-note">This is a web app that allows users to encrypt their data</li>
-                            <li className="content__info--project-text-note">when consuming an API.</li>
-                            </ul>
-                        </div>
-                    </div> */}
+                    
                     {used}
 
                     <div className="content__info--more_projects back" style={{marginRight: "20px", display: "none"}} onClick={()=>prevProjects()}>
@@ -470,6 +462,81 @@ const Portfolio = () => {
                         <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image3,account,"GTAccount")}>Project Screnshoots</a>
                       </div>
                     </div>
+
+                    <div className="main-project__info-story">
+                      <div className="main-project__info-story-project-title">
+                       <h2 className="heading-secondary"><a href="https://check-d-deck.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Staff Manager App</a></h2>
+                        <div className="main-project__info-story-block">
+                            <div className="main-project__info-story-block-1">
+                                <p className="heading-tertiary list-title">About</p>
+                                <div className="text-secondary">
+                                    <p>
+                                        This is a web application used by HR/Admin to manage their company departments, Staff,
+                                        activities, documents e.t.c.
+                                    </p>
+                                    <p> The admin can easily monitor work done by each departments and staff.</p> 
+                                </div>
+                            </div>
+                            <div className="main-project__info-story-block-2">
+                                
+                                <p className="text-secondary">
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and backened developer
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp; Check D'Deck Homes Admin/Staff
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp; Check D'Deck Homes
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React.js, Node.js, MongoDB
+                                </p>
+                               
+                            </div>
+                        </div>
+
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image10,manager,"Staff Manager App")}>Project Screnshoots</a>
+                      </div>
+                    </div>
+
+                    <div className="main-project__info-story">
+                      <div className="main-project__info-story-project-title">
+                       <h2 className="heading-secondary"><a href="https://cbtquiz.netlify.app/" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">CBT Test</a></h2>
+                        <div className="main-project__info-story-block">
+                            <div className="main-project__info-story-block-1">
+                                <p className="heading-tertiary list-title">About</p>
+                                <div className="text-secondary">
+                                    <p>
+                                        This is a web application for conducting any online test or exam for students.
+                                    </p>
+                                    <p> The test can be timed and it will automatically mark and display user's score upon 
+                                        submission.
+                                    </p> 
+                                </div>
+                            </div>
+                            <div className="main-project__info-story-block-2">
+                                
+                                <p className="text-secondary">
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end developer
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp; Available to anybody
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp; Self owned
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp; Vue.js
+                                </p>
+                               
+                            </div>
+                        </div>
+
+                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image11,cbt,"CBT Test")}>Project Screnshoots</a>
+                      </div>
+                    </div>
+
+
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
