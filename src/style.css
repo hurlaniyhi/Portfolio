@@ -146,7 +146,7 @@ body {
     width: 5rem;
     position: absolute;
     top: .5rem;
-    right: 2rem;
+    right: 2rem;  
     border-radius: 5%;
     z-index: 100;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
