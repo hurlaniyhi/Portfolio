@@ -16,9 +16,7 @@ const stateReducer = (state, action) => {
 
 export const StateProvider = (props) => {
 
-
     const [state, dispatch] = useReducer(stateReducer,{src: "", color: "", projectName: ""})
-
 
     const NavigateMe = async(history, image, color, name) => {
 
@@ -33,7 +31,6 @@ export const StateProvider = (props) => {
     const Home = (history) => {
         history.push("/")
     }
-
 
     const boundActions = {
         NavigateMe,

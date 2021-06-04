@@ -79,13 +79,12 @@ const Portfolio = () => {
         </div>
 
         <div id="good" className="content__info--project">
-            <img src={require("./assets/gtaccount/account1.jpg")} alt="" className="content__info--project-image"/>
+            <img src={require("./assets/gtworld.jpg")} alt="" className="content__info--project-image"/>
             <div className="content__info--project-text">
-                <a href="https://gtaccount.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">GTAccount</a>
+                <a href="https://play.google.com/store/search?q=gtword&c=apps" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">GTWorld</a>
                     
                     <p className="content__info--project-text-note">
-                        This is a web application designed for prospective GTBank's customers to open 
-                        an account in less than 3 minutes.
+                        This is a mobile app used by GTBank's customers to carry out all banking activities
                     </p>
             </div>
         </div>
@@ -103,15 +102,31 @@ const Portfolio = () => {
     </div>
 
     <div id="good" className="content__info--project">
-        <img src={require("./assets/cbt.png")} alt="" className="content__info--project-image"/>
+        <img src={require("./assets/oToolBox.jpg")} alt="" className="content__info--project-image"/>
         <div className="content__info--project-text">
-            <a href="https://cbtquiz.netlify.app" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">CBT Test</a>
+            <a href="https://play.google.com/store/apps/details?id=com.gtbank.appdev.orangetoolboxv1" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Orange Tool Box</a>
                 <p className="content__info--project-text-note">
-                    This is a web application that can be used to conduct any online test and exam for students.
+                    This is mobile app used by the GTBank's staff majorly marketers to ease banking and solving customers' issues outside the bank.
                 </p>
         </div>
     </div>
 
+    {/* href="https://cbtquiz.netlify.app" */}
+
+    <div id="good" className="content__info--project">
+        <img src={require("./assets/vSprouts.jpg")} alt="" className="content__info--project-image"/>
+        <div className="content__info--project-text">
+            <a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Virtuous Sprouts Academy</a>
+                <p className="content__info--project-text-note">
+                    Virtuous Sprouts Academy school/result portal
+                </p>
+        </div>
+    </div>
+
+    {/* href="https://tourandsmile.herokuapp.com" */}
+</div>,
+
+<div>
     <div className="content__info--project">
         <img src={require("./assets/thinklex/Thinklex1.jpg")} alt="" className="content__info--project-image"/>
         <div className="content__info--project-text">
@@ -119,18 +134,6 @@ const Portfolio = () => {
                 <p className="content__info--project-text-note">
                     Thinklex is a mobile app built for Engineering students. The app contains a scientific calculator, 
                     four equations with four unknowns solver and Engineering formulas with how they are used.
-                </p>
-        </div>
-    </div>
-</div>,
-
-<div>
-    <div id="good" className="content__info--project">
-        <img src={require("./assets/natours/natours1.jpg")} alt="" className="content__info--project-image"/>
-        <div className="content__info--project-text">
-            <a href="https://tourandsmile.herokuapp.com" target="_blank" rel="noopener noreferrer" className="content__info--project-text-link">Tour And Smile</a>
-                <p className="content__info--project-text-note">
-                    This is a website that allows people to book for a tour from different categories of tours available.
                 </p>
         </div>
     </div>
@@ -221,7 +224,7 @@ const Portfolio = () => {
     require("./assets/request/request4.jpg"), require("./assets/request/request5.jpg"), require("./assets/request/request6.jpg"),
     require("./assets/request/request7.jpg"), require("./assets/request/request8.jpg")]
 
-    const image10 = [require("./assets/manager/manager1.png"), require("./assets/manager/manager2.png"), require("./assets/manager/manager3.png"),
+    const image10 = [require("./assets/manager/manager2.png"), require("./assets/manager/manager2.png"), require("./assets/manager/manager3.png"),
     require("./assets/manager/manager4.png"), require("./assets/manager/manager5.png"), require("./assets/manager/manager6.png"),
     require("./assets/manager/manager7.png"), require("./assets/manager/manager8.png")]
 
@@ -428,40 +431,44 @@ const Portfolio = () => {
                       </div>
                     </div>
 
+
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://gtaccount.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">GTAccount</a></h2>
+                       <h2 className="heading-secondary"><a href="https://play.google.com/store/search?q=gtword&c=apps" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">GTWorld</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
                                 <div className="text-secondary">
                                     <p>
-                                        This is a web application designed for prospective GTBank's customers 
-                                        to open an account in less than 3 minutes.
+                                    GTWorld is one of GTBank mobile apps used by customers to carry out all banking
+                                     activities including account opening and transactions.
                                     </p>
                                 </div>
                             </div>
                             <div className="main-project__info-story-block-2">
                                 
                                 <p className="text-secondary">
-                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end developer
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and back-end developer
                                 </p>
                                 <p className="text-secondary">
                                     <span className="list-title">Users:</span> &nbsp; &nbsp;Available to anybody
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp;GTBank's Fintech
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;GTBank
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React.js, Node.js, MongoDB
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;Ionic angular, Asp.net, SQL
                                 </p>
                                
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image3,account,"GTAccount")}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots" >Project Screnshoots</a> 
+                        {/* onClick={()=>NavigateMe(history,image3,account,"GTAccount")} */}
                       </div>
                     </div>
+
+                    {/* href="https://gtaccount.herokuapp.com" */}
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
@@ -501,41 +508,77 @@ const Portfolio = () => {
 
                     <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://cbtquiz.netlify.app/" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">CBT Test</a></h2>
+                       <h2 className="heading-secondary"><a href="https://play.google.com/store/apps/details?id=com.gtbank.appdev.orangetoolboxv1" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Orange Tool Box</a></h2>
                         <div className="main-project__info-story-block">
                             <div className="main-project__info-story-block-1">
                                 <p className="heading-tertiary list-title">About</p>
                                 <div className="text-secondary">
                                     <p>
-                                        This is a web application for conducting any online test or exam for students.
+                                    This is a mobile app used by the GTBank's staff majorly marketers to ease banking and solving customers' issues outside the bank
                                     </p>
-                                    <p> The test can be timed and it will automatically mark and display user's score upon 
-                                        submission.
-                                    </p> 
                                 </div>
                             </div>
                             <div className="main-project__info-story-block-2">
                                 
                                 <p className="text-secondary">
-                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end developer
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and back-end developer
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Users:</span> &nbsp; &nbsp; Available to anybody
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp; Available to GTBank's staff
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp; Self owned
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp; GTBank
                                 </p>
                                 <p className="text-secondary">
-                                    <span className="list-title">Tools:</span> &nbsp; &nbsp; Vue.js
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp; Ionic angular, Asp.net, SQL
                                 </p>
                                
                             </div>
                         </div>
 
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image11,cbt,"CBT Test")}>Project Screnshoots</a>
+                        <a className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        {/* onClick={()=>NavigateMe(history,image11,cbt,"CBT Test")} */}
                       </div>
                     </div>
 
+
+                    <div className="main-project__info-story">
+                      <div className="main-project__info-story-project-title">
+                       <h2 className="heading-secondary"><a href="https://virtuous-sprout.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Virtuous Sprouts Academy</a></h2>
+                        <div className="main-project__info-story-block">
+                            <div className="main-project__info-story-block-1">
+                                <p className="heading-tertiary list-title">About</p>
+                                <div className="text-secondary">
+                                    <p>
+                                        Virtuous Sprouts Academy school/result portal.
+                                    </p>
+                                    <p>
+                                        It also has the onboarding feature.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="main-project__info-story-block-2">
+                                
+                                <p className="text-secondary">
+                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and Back-end developer
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Users:</span> &nbsp; &nbsp;Virtuous Sprouts Students and Staff
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Client:</span> &nbsp; &nbsp;Virtuous Sprouts Academy
+                                </p>
+                                <p className="text-secondary">
+                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;React.js, Node.js, MongoDB
+                                </p>
+                               
+                            </div>
+                        </div>
+
+                        <a className="main-project__info-story-screenshots">Project Screnshoots</a>
+                        {/* onClick={()=>NavigateMe(history,image7,engine,"Encryption Engine")} */}
+                      </div>
+                    </div>
 
 
                     <div className="main-project__info-story">
@@ -650,46 +693,8 @@ const Portfolio = () => {
                       </div>
                     </div>
 
-                    <div className="main-project__info-story">
-                      <div className="main-project__info-story-project-title">
-                       <h2 className="heading-secondary"><a href="https://fintechdataencryption.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Encryption Engine</a></h2>
-                        <div className="main-project__info-story-block">
-                            <div className="main-project__info-story-block-1">
-                                <p className="heading-tertiary list-title">About</p>
-                                <div className="text-secondary">
-                                    <p>
-                                        This is an internal web app for encrypting data (payload) when consuming APIs.
-                                        It returns the encrypted data as a response
-                                    </p>
-                                    <p>
-                                        It can take in a string and object with the users having the advantage of being able to select the the keys
-                                        keys of the object they wish to encrypt.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="main-project__info-story-block-2">
-                                
-                                <p className="text-secondary">
-                                    <span className="list-title">Role:</span> &nbsp; &nbsp;Front-end and Back-end developer
-                                </p>
-                                <p className="text-secondary">
-                                    <span className="list-title">Users:</span> &nbsp; &nbsp;GTBank's Fintech Memebers
-                                </p>
-                                <p className="text-secondary">
-                                    <span className="list-title">Client:</span> &nbsp; &nbsp;GTBank's Fintech
-                                </p>
-                                <p className="text-secondary">
-                                    <span className="list-title">Tools:</span> &nbsp; &nbsp;Node.js, Handlebars, CSS
-                                </p>
-                               
-                            </div>
-                        </div>
-
-                        <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image7,engine,"Encryption Engine")}>Project Screnshoots</a>
-                      </div>
-                    </div>
-
-                    <div className="main-project__info-story">
+                    
+                    {/* <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
                        <h2 className="heading-secondary"><a href="https://drive.google.com/file/d/1KQW0QtfZ3T0-Du18eb2y-VKrOdshukad/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Path Tracker</a></h2>
                         <div className="main-project__info-story-block">
@@ -723,9 +728,9 @@ const Portfolio = () => {
 
                         <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image8,tracker,"Tour Tracker")}>Project Screnshoots</a>
                       </div>
-                    </div>
+                    </div> */}
 
-                    <div className="main-project__info-story">
+                    {/* <div className="main-project__info-story">
                       <div className="main-project__info-story-project-title">
                        <h2 className="heading-secondary"><a href="https://ui-ux-request.herokuapp.com" target="_blank" rel="noopener noreferrer" className="main-project__info-story-project-title-name">Request App</a></h2>
                         <div className="main-project__info-story-block">
@@ -759,7 +764,7 @@ const Portfolio = () => {
 
                         <a className="main-project__info-story-screenshots" onClick={()=>NavigateMe(history,image9,request,"Request App")}>Project Screnshoots</a>
                       </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </section>
